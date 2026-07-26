@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Buscar Voos | AeroClick Travel</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="main" id="top">
+      
+      <!-- MENU SUPERIOR (Idêntico ao da Home) -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="130" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#service">Serviços</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#destination">Destinos</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#booking">Como Funciona</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MOTOR DE BUSCA DE VOOS -->
+      <section style="padding-top: 12rem; padding-bottom: 5rem; background-color: #f8f9fa;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card shadow-lg border-0" style="border-radius: 20px;">
+                <div class="card-body p-5">
+                  <h3 class="text-center text-secondary fw-bold mb-4">Encontre os melhores <span class="text-danger">voos</span> para sua viagem</h3>
+                  
+                  <!-- Formulário -->
+                  <form id="flightSearchForm">
+                    <div class="row g-3 align-items-center">
+                      <div class="col-md-3">
+                        <label class="form-label fs--1 fw-medium">Origem</label>
+                        <input type="text" class="form-control" id="origem" placeholder="Ex: GRU" required>
+                      </div>
+                      <div class="col-md-3">
+                        <label class="form-label fs--1 fw-medium">Destino</label>
+                        <input type="text" class="form-control" id="destino" placeholder="Ex: JFK" required>
+                      </div>
+                      <div class="col-md-2">
+                        <label class="form-label fs--1 fw-medium">Ida</label>
+                        <input type="date" class="form-control" id="dataIda" required>
+                      </div>
+                      <div class="col-md-2">
+                        <label class="form-label fs--1 fw-medium">Volta</label>
+                        <input type="date" class="form-control" id="dataVolta">
+                      </div>
+                      <div class="col-md-2 mt-auto d-grid">
+                        <button type="submit" class="btn btn-primary" style="height: 40px;">Buscar</button>
+                      </div>
+                    </div>
+                  </form>
+
+                  <!-- Div onde os resultados da API vão aparecer -->
+                  <div id="flightResults" class="mt-5 d-none">
+                    <div class="text-center">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Buscando...</span>
+                      </div>
+                      <p class="mt-2 text-secondary">Buscando as melhores rotas no backend...</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RODAPÉ -->
+      <div class="py-5 text-center bg-white">
+        <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: [SEU CNPJ] | CADASTUR: [SEU CADASTUR] | contato@aeroclicktravel.com.br</p>
+      </div>
+
+    </main>
+
+    <!-- JavaScript Base -->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <!-- Script de Lógica do Motor de Busca -->
+    <script>
+      document.getElementById('flightSearchForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const origem = document.getElementById('origem').value;
+        const destino = document.getElementById('destino').value;
+        const dataIda = document.getElementById('dataIda').value;
+        const resultsDiv = document.getElementById('flightResults');
+        
+        // Exibe a área de carregamento
+        resultsDiv.classList.remove('d-none');
+        resultsDiv.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"></div><p class="mt-2 text-secondary">Conectando ao backend...</p></div>';
+
+        // Aqui entrará a chamada (Fetch) para a sua futura API Rest
+        // Exemplo: fetch(`https://api.seubackend.com.br/voos?origem=${origem}&destino=${destino}&ida=${dataIda}`)
+        setTimeout(() => {
+          resultsDiv.innerHTML = `
+            <div class="alert alert-info text-center" role="alert">
+              Integração com API de consolidadora em desenvolvimento. <br>
+              <strong>Buscando voos de ${origem} para ${destino} na data ${dataIda}.</strong>
+            </div>
+          `;
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
