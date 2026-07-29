@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .card-img-top { height: 240px; object-fit: cover; }
+        .card-img-top { height: 180px; object-fit: cover; }
         .hero-section { padding-top: 8rem; padding-bottom: 4rem; }
+        .category-title { font-size: 1.5rem; font-weight: 700; color: #0d6efd; border-bottom: 2px solid #e9ecef; padding-bottom: 0.5rem; margin-top: 3rem; margin-bottom: 1.5rem; }
     </style>
 </head>
 <body>
@@ -35,60 +36,353 @@
                 </p>
             </div>
 
-            <!-- Grid de Cartões -->
+
+            <!-- ================= PARQUES TEMÁTICOS ================= -->
+            <div class="category-title">Parques Temáticos</div>
             <div class="row g-4">
                 
-                <!-- Card 1: Disney -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1518081461904-9d8f136351c2?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Disney">
-                        <div class="card-body p-4 d-flex flex-column bg-white">
-                            <h4 class="fw-bold mb-3 text-dark">Walt Disney World - Orlando</h4>
-                            <p class="text-secondary mb-4" style="line-height: 1.6;">
-                                Garanta seus ingressos para os 4 parques temáticos e viva a magia da Disney.
-                            </p>
-                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-primary fw-bold py-2 shadow-sm">
-                                Comprar Ingressos 🎟️
+                <!-- 1. Walt Disney World -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1518081461904-9d8f136351c2?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Walt Disney World">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Walt Disney World ®</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2: Universal -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1607151814695-d8aa3ff02e3b?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Universal">
-                        <div class="card-body p-4 d-flex flex-column bg-white">
-                            <h4 class="fw-bold mb-3 text-dark">Universal Studios Orlando</h4>
-                            <p class="text-secondary mb-4" style="line-height: 1.6;">
-                                Explore o Mundo Mágico de Harry Potter e as maiores aventuras do cinema.
-                            </p>
-                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-primary fw-bold py-2 shadow-sm">
-                                Comprar Ingressos 🎟️
+                <!-- 2. Universal Orlando -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1607151814695-d8aa3ff02e3b?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Universal Orlando">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Universal Orlando Resort</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 3: Parques Nacionais / Serra Gaúcha -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Parques Nacionais">
-                        <div class="card-body p-4 d-flex flex-column bg-white">
-                            <h4 class="fw-bold mb-3 text-dark">Atrações Nacionais</h4>
-                            <p class="text-secondary mb-4" style="line-height: 1.6;">
-                                Curta as melhores atrações do Brasil com conforto e condições imperdíveis.
-                            </p>
-                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-primary fw-bold py-2 shadow-sm">
-                                Comprar Ingressos 🎟️
+                <!-- 3. SeaWorld Orlando -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="SeaWorld Orlando">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">SeaWorld ® Orlando</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Busch Gardens -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Busch Gardens">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Busch Gardens ®</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Discovery Cove -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Discovery Cove">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Discovery Cove</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Legoland Florida -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1581557991964-125469da3b8a?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Legoland Florida">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Legoland / Peppa Pig Flórida</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Kennedy Space Center -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Kennedy Space Center">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Kennedy Space Center Visitor Complex</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. ICON Park -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="ICON Park">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">ICON Park</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Disneyland California -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Disneyland California">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Disneyland Califórnia ®</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Universal California -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Universal California">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Universal Califórnia</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. SeaWorld San Diego -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="SeaWorld San Diego">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">SeaWorld ® San Diego</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Legoland California -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Legoland California">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Legoland Califórnia</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
                             </a>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+
+            <!-- ================= ATRAÇÕES E PASSEIOS ================= -->
+            <div class="category-title">Atrações e Passeios</div>
+            <div class="row g-4">
+                
+                <!-- 1. Serra Gaúcha -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Serra Gaúcha">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Atrações Serra Gaúcha</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Beach Park -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Beach Park">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Beach Park - Fortaleza</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Brightline Train -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1515165562839-978bbcfc9282?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Brightline Train">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Brightline Train</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Chip Dados Internacional -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Chip Dados">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Chip Dados Internacional</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Cirque du Soleil -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Cirque du Soleil">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Cirque du Soleil | Drawn to Life</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. CityPass -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="CityPass">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">CityPass</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Gatorland -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1534567153574-2b12153a87f0?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Gatorland">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Gatorland</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Madame Tussauds -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Madame Tussauds">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Madame Tussauds</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Medieval Times -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Medieval Times">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Medieval Times</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Orlando Magic -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Orlando Magic">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Orlando Magic</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Restaurantes em Orlando -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Restaurantes em Orlando">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Restaurantes em Orlando</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Warner Bros Studio Tour -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Warner Bros">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Warner Bros. Studio Tour Hollywood</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Wonderworks Orlando -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="Wonderworks Orlando">
+                        <div class="card-body p-3 d-flex flex-column text-center">
+                            <h5 class="fw-bold text-dark fs-6 mb-3">Wonderworks Orlando</h5>
+                            <a href="https://aeroclicktravel.minhaviagem.com.br" target="_blank" class="mt-auto btn btn-outline-primary btn-sm fw-bold">
+                                Comprar Ingressos 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
+
+    <!-- Rodapé -->
+    <div class="py-5 text-center bg-white border-top mt-5">
+        <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
