@@ -69,24 +69,39 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="130" alt="logo" /></a>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bg-white shadow-sm" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="110" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             
-            <!-- Classe alterada para mx-auto para centralizar os itens -->
+            <!-- Menu Principal Atualizado com Dropdown de Reservas -->
             <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Serviços</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#destination">Destinos</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#booking">Como Funciona</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="index.html">Início</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="#service">Serviços</a></li>
+              
+              <!-- Menu Dropdown: Reservas e Produtos -->
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reservas & Lazer
+                </a>
+                <ul class="dropdown-menu shadow border-0 rounded-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item py-2 fw-medium" href="hoteis.html">🏨 Hotéis e Hospedagem</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="ingressos.html">🎟️ Ingressos e Passeios</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="passagens.html">✈️ Passagens Aéreas</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="cruzeiros.html">🚢 Cruzeiros Marítimos</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="#destination">Destinos</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="#booking">Como Funciona</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
             </ul>
 
           </div>
         </div>
       </nav>
 
-      <section style="padding-top: 7rem;">
+      <section style="padding-top: 9rem;">
         <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
         </div>
         <!--/.bg-holder-->
@@ -105,8 +120,7 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
           </div>
         </div>
       </section>   
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
+      
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="pt-5 pt-md-9" id="service">
@@ -119,34 +133,37 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
           </div>
           <div class="row">
             <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/icon1.png" width="75" alt="Service" />
-                  <h4 class="mb-3">Assessoria de Vistos</h4>
-                  <p class="mb-0 fw-medium">Cuidamos de toda a burocracia e formulários para a aprovação do seu visto consular.</p>
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
+                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon1.png" width="75" alt="Service" class="mx-auto" />
+                  <h4 class="mb-3 mt-3">Assessoria de Vistos</h4>
+                  <p class="mb-3 fw-medium">Cuidamos de toda a burocracia e formulários para a aprovação do seu visto consular.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/icon2.png" width="75" alt="Service" />
-                  <h4 class="mb-3">Passagens Aéreas</h4>
-                  <p class="mb-0 fw-medium">Acesso a tarifas exclusivas de consolidadoras nas melhores companhias do mundo.</p>
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
+                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon2.png" width="75" alt="Service" class="mx-auto" />
+                  <h4 class="mb-3 mt-3">Passagens Aéreas</h4>
+                  <p class="mb-3 fw-medium">Acesso a tarifas exclusivas nas melhores companhias do mundo.</p>
+                  <a href="passagens.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Passagens ✈️</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/icon3.png" width="75" alt="Service" />
-                  <h4 class="mb-3">Seguro Viagem</h4>
-                  <p class="mb-0 fw-medium">Viaje protegido. Cobertura completa para imprevistos médicos e extravio de bagagem.</p>
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
+                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon3.png" width="75" alt="Service" class="mx-auto" />
+                  <h4 class="mb-3 mt-3">Hotéis & Resorts</h4>
+                  <p class="mb-3 fw-medium">Hospedagem de alto padrão com tarifas imperdíveis no Brasil e exterior.</p>
+                  <a href="hoteis.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Hotéis 🏨</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
-                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/icon4.png" width="75" alt="Service" />
-                  <h4 class="mb-3">Roteiros Completos</h4>
-                  <p class="mb-0 fw-medium">Hotéis, aluguel de carros e ingressos. Montamos sua viagem do início ao fim.</p>
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
+                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon4.png" width="75" alt="Service" class="mx-auto" />
+                  <h4 class="mb-3 mt-3">Ingressos & Cruzeiros</h4>
+                  <p class="mb-3 fw-medium">Parques temáticos em Orlando e roteiros incríveis em alto-mar.</p>
+                  <a href="ingressos.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Ingressos 🎟️</a>
                 </div>
               </div>
             </div>
@@ -155,11 +172,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
 
       </section>
       <!-- <section> close ============================-->
+
       <!-- ============================================-->
-
-
-
-<!-- ============================================-->
       <!-- <section> begin ============================-->
       <section id="booking">
 
@@ -232,11 +246,7 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
       </section>
       <!-- <section> close ============================-->
 
-
-
-
-
-        <!-- ============================================-->
+      <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="pt-5" id="destination">
 
@@ -257,8 +267,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
               <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/newyork.png" alt="Nova York" />
                 <div class="card-body py-4 px-3 d-flex flex-column">
                   <h4 class="text-secondary fw-bold mb-3">Nova York (EUA) 🇺🇸</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes completos com passagens aéreas saindo de Chapecó, hospedagem em hotéis centrais em Manhattan e ingressos para a Broadway e principais atrações.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Cuidamos de toda a burocracia. Oferecemos assessoria completa para emissão do seu Visto Americano integrada ao pacote.</p>
+                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes completos com passagens aéreas saindo de Chapecó, hospedagem em hotéis centrais em Manhattan e ingressos para a Broadway.</p>
+                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Cuidamos de toda a burocracia e da emissão do seu Visto Americano.</p>
                   <a class="btn btn-outline-primary mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Nova%20York." target="_blank">Solicitar Cotação</a>
                 </div>
               </div>
@@ -269,8 +279,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
               <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/lisboa.png" alt="Lisboa" />
                 <div class="card-body py-4 px-3 d-flex flex-column">
                   <h4 class="text-secondary fw-bold mb-3">Lisboa (Portugal) 🇵🇹</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Voos com conexões ágeis, reservas em hotéis boutique bem localizados e o seguro-viagem internacional obrigatório para a Europa (Tratado de Schengen).</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Montamos roteiros sob medida para você explorar a cultura e a gastronomia portuguesa no seu próprio ritmo.</p>
+                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Voos com conexões ágeis, reservas em hotéis boutique e seguro-viagem internacional obrigatório.</p>
+                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Montamos roteiros sob medida para você explorar a cultura europeia.</p>
                   <a class="btn btn-outline-primary mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Lisboa." target="_blank">Solicitar Cotação</a>
                 </div>
               </div>
@@ -281,8 +291,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
               <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/cancun.png" alt="Cancún" />
                 <div class="card-body py-4 px-3 d-flex flex-column">
                   <h4 class="text-secondary fw-bold mb-3">Cancún (México) 🇲🇽</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes de férias inesquecíveis em resorts All-Inclusive à beira-mar, passagens aéreas promocionais e traslados exclusivos.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Auxiliamos na verificação e trâmites de vistos necessários para a sua entrada segura no território mexicano.</p>
+                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes em resorts All-Inclusive à beira-mar, passagens aéreas e traslados exclusivos.</p>
+                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Auxiliamos na verificação e trâmites de vistos necessários para a sua viagem.</p>
                   <a class="btn btn-outline-primary mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Canc%C3%BAn." target="_blank">Solicitar Cotação</a>
                 </div>
               </div>
@@ -298,8 +308,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
               <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/camboriu.png" alt="Balneário Camboriú" />
                 <div class="card-body py-4 px-3 d-flex flex-column">
                   <h4 class="text-secondary fw-bold mb-3">Balneário Camboriú (SC) 🏙️</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Reservas nos melhores hotéis e resorts da Avenida Atlântica, aluguel de carros e passaportes antecipados para o Parque Beto Carrero World.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> A facilidade de fechar uma viagem incrível na praia mais valorizada do estado com suporte personalizado bem perto de você.</p>
+                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Reservas nos melhores hotéis e passaportes antecipados para o Beto Carrero World.</p>
+                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Suporte personalizado bem perto de você.</p>
                   <a class="btn btn-outline-success mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Balne%C3%A1rio%20Cambori%C3%BA." target="_blank">Falar com Consultor</a>
                 </div>
               </div>
@@ -310,8 +320,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
               <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/rio.png" alt="Rio de Janeiro" />
                 <div class="card-body py-4 px-3 d-flex flex-column">
                   <h4 class="text-secondary fw-bold mb-3">Rio de Janeiro (RJ) 🏙️</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Passagens aéreas com tarifas competitivas, hospedagem em áreas seguras da Zona Sul e combos de ingressos para o Cristo Redentor e Pão de Açúcar.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Monitoramento de voos em tempo real e atendimento rápido via WhatsApp para qualquer imprevisto na sua viagem.</p>
+                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Passagens aéreas, hospedagem segura na Zona Sul e combos de ingressos.</p>
+                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Monitoramento de voos em tempo real e atendimento rápido.</p>
                   <a class="btn btn-outline-success mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20o%20Rio%20de%20Janeiro." target="_blank">Falar com Consultor</a>
                 </div>
               </div>
@@ -322,8 +332,8 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
               <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/maceio.png" alt="Maceió" />
                 <div class="card-body py-4 px-3 d-flex flex-column">
                   <h4 class="text-secondary fw-bold mb-3">Maceió (AL) 🏖️</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes de sol e praia com os resorts mais procurados do Nordeste, voos integrados e passeios para as famosas piscinas naturais.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Negociação direta com grandes operadoras para garantir o melhor custo-benefício em hotelaria marítima.</p>
+                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes de sol e praia, resorts no Nordeste e passeios para piscinas naturais.</p>
+                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Negociação direta para garantir o melhor custo-benefício.</p>
                   <a class="btn btn-outline-success mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Macei%C3%B3." target="_blank">Falar com Consultor</a>
                 </div>
               </div>
@@ -334,8 +344,6 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
 
       </section>
       <!-- <section> close ============================-->
-
-
       
       <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
         <div class="container">
@@ -369,13 +377,6 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
         </div>
       </div>
 
-
-    
-
-
-
-
-      <!-- ============================================-->
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="pb-0 pb-lg-4">
@@ -388,23 +389,23 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">A Agência</h4>
               <ul class="list-unstyled mb-0">
-               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="sobre.html">Sobre nós</a></li>                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Carreiras</a></li>
-                <!-- <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Parcerias B2B</a></li> -->
+               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="sobre.html">Sobre nós</a></li>               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Carreiras</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contato</h4>
               <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="faq.html">Ajuda / FAQ</a></li>                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">WhatsApp</a></li>
+              <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="faq.html">Ajuda / FAQ</a></li>               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">WhatsApp</a></li>
                 <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="mailto:contato@aeroclicktravel.com.br">E-mail</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
-              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Serviços</h4>
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Serviços & Lazer</h4>
               <ul class="list-unstyled mb-0">
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Passagens Aéreas</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#destination!">Assessoria de Vistos</a></li>
-                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Seguro Viagem</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="passagens.html">Passagens Aéreas</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="hoteis.html">Hotéis e Resorts</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="ingressos.html">Ingressos e Parques</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="cruzeiros.html">Cruzeiros Marítimos</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
@@ -421,7 +422,7 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
         <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
         <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
         <p class="mb-0 text-secondary fs--2 fw-medium mt-2">AEROCLICKTRAVEL.COM.BR - Ministério do Turismo - Cadastur 68.169.276/0001-31</p>
-  
+ 
       </div>
     </main>
     <!-- ===============================================-->
