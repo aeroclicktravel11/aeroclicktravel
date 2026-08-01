@@ -38,6 +38,7 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
     <!-- Meta Pixel Code -->
@@ -135,47 +136,97 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
             <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Nossos Principais Serviços</h3>
           </div>
           <div class="row">
-            <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
-                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon1.png" width="75" alt="Service" class="mx-auto" />
-                  <h4 class="mb-3 mt-3">Assessoria de Vistos</h4>
-                  <p class="mb-3 fw-medium">Cuidamos de toda a burocracia e formulários para a aprovação do seu visto consular.</p>
+            
+            <!-- 1. Assessoria de Vistos -->
+            <div class="col-lg-4 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
+                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
+                  <img src="assets/img/servicos/vistos.png" alt="Assessoria de Vistos" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
+                  <h4 class="mb-3">Assessoria de Vistos</h4>
+                  <p class="mb-3 fw-medium">Cuidamos de toda a burocracia, formulários DS-160 e agendamentos consulares.</p>
+                  <a href="vistos.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Vistos</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
-                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon2.png" width="75" alt="Service" class="mx-auto" />
-                  <h4 class="mb-3 mt-3">Passagens Aéreas</h4>
-                  <p class="mb-3 fw-medium">Acesso a tarifas exclusivas nas melhores companhias do mundo.</p>
+
+            <!-- 2. Passagens Aéreas -->
+            <div class="col-lg-4 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
+                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
+                  <img src="assets/img/servicos/passagens.png" alt="Passagens Aéreas" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
+                  <h4 class="mb-3">Passagens Aéreas</h4>
+                  <p class="mb-3 fw-medium">Acesso a tarifas exclusivas nas melhores companhias aéreas do mundo.</p>
                   <a href="passagens.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Passagens</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
-                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon3.png" width="75" alt="Service" class="mx-auto" />
-                  <h4 class="mb-3 mt-3">Hotéis & Resorts</h4>
+
+            <!-- 3. Hotéis & Resorts -->
+            <div class="col-lg-4 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
+                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
+                  <img src="assets/img/servicos/hoteis.png" alt="Hotéis e Resorts" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
+                  <h4 class="mb-3">Hotéis & Resorts</h4>
                   <p class="mb-3 fw-medium">Hospedagem de alto padrão com tarifas imperdíveis no Brasil e exterior.</p>
                   <a href="hoteis.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Hotéis</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 text-center align-items-center h-100">
-                <div class="card-body p-xxl-5 p-4 d-flex flex-column"> <img src="assets/img/category/icon4.png" width="75" alt="Service" class="mx-auto" />
-                  <h4 class="mb-3 mt-3">Ingressos & Cruzeiros</h4>
+
+            <!-- 4. Ingressos & Cruzeiros -->
+            <div class="col-lg-4 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
+                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
+                  <img src="assets/img/servicos/ingressos.png" alt="Ingressos e Cruzeiros" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
+                  <h4 class="mb-3">Ingressos & Cruzeiros</h4>
                   <p class="mb-3 fw-medium">Parques temáticos em Orlando e roteiros incríveis em alto-mar.</p>
                   <a href="ingressos.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Ingressos</a>
                 </div>
               </div>
             </div>
+
+            <!-- 5. Seguro Viagem -->
+            <div class="col-lg-4 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
+                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
+                  <img src="assets/img/servicos/seguros.png" alt="Seguro Viagem" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
+                  <h4 class="mb-3">Seguro Viagem</h4>
+                  <p class="mb-3 fw-medium">Assistência médica completa, bagagem e proteção global 24h para sua tranquilidade.</p>
+                  <a href="seguros.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Seguros</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Chip Internacional -->
+            <div class="col-lg-4 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
+                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
+                  <img src="assets/img/servicos/chip.png" alt="Chip Internacional" class="w-100 h-100" style="object-fit: cover;" />
+                </div>
+                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
+                  <h4 class="mb-3">Chip Internacional</h4>
+                  <p class="mb-3 fw-medium">Conectividade de alta velocidade com eSIM ou chip físico mantendo seu WhatsApp.</p>
+                  <a href="chip.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Chips</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div><!-- end of .container-->
 
       </section>
       <!-- <section> close ============================-->
-
+      
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section id="booking">
@@ -191,7 +242,7 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
                 <div class="bg-primary me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/selection.svg" width="22" alt="steps" /></div>
                 <div class="flex-1">
                   <h5 class="text-secondary fw-bold fs-0">1. Defina o seu destino</h5>
-                  <p>Conte-nos seus planos. Seja para turismo, intercâmbio ou negócios, nós montamos o roteiro ideal para você.</p>
+                  <p>Conte-nos seus plans. Seja para turismo, intercâmbio ou negócios, nós montamos o roteiro ideal para você.</p>
                 </div>
               </div>
               <div class="d-flex align-items-start mb-5">
@@ -348,37 +399,102 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
       </section>
       <!-- <section> close ============================-->
       
-      <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
+      <!-- SEÇÃO BANNER SEGURO VIAGEM EXplicativo -->
+      <section class="py-6 position-relative bg-light border-top border-bottom">
         <div class="container">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
-            <div class="col">
-              <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/1.png" alt="" /></div>
+          <div class="row align-items-center g-5">
+            
+            <!-- Coluna de Informações e Benefícios -->
+            <div class="col-lg-7">
+              <span class="badge bg-success px-3 py-2 mb-3 shadow-sm">Proteção Obrigatória e Essencial</span>
+              <h2 class="fw-bold text-dark display-6 mb-3">Por que você precisa de um Seguro Viagem?</h2>
+              <p class="text-secondary mb-4" style="line-height: 1.7;">
+                Viajar protegido não é apenas uma garantia de tranquilidade para imprevistos médicos, farmacêuticos ou extravio de bagagem; em muitos destinos internacionais, a contratação de um seguro viagem é uma <strong>exigência legal obrigatória</strong> para a imigração.
+              </p>
+
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start">
+                    <div class="text-success fs-4 me-3"><i class="bi bi-check-circle-fill"></i></div>
+                    <div>
+                      <h6 class="fw-bold text-dark mb-1">Países da Europa (Schengen)</h6>
+                      <p class="fs--1 text-secondary mb-0">Exigem cobertura mínima obrigatória de € 30.000 para assistência médica.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start">
+                    <div class="text-success fs-4 me-3"><i class="bi bi-check-circle-fill"></i></div>
+                    <div>
+                      <h6 class="fw-bold text-dark mb-1">Outros Destinos Exigentes</h6>
+                      <p class="fs--1 text-secondary mb-0">Países como Cuba, Venezuela e alguns vistos de intercâmbio também cobram o seguro.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start">
+                    <div class="text-success fs-4 me-3"><i class="bi bi-shield-fill-check"></i></div>
+                    <div>
+                      <h6 class="fw-bold text-dark mb-1">Cobertura Global 24h</h6>
+                      <p class="fs--1 text-secondary mb-0">Atendimento médico em português, doenças preexistentes, gestantes e práticas esportivas.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-start">
+                    <div class="text-success fs-4 me-3"><i class="bi bi-luggage"></i></div>
+                    <div>
+                      <h6 class="fw-bold text-dark mb-1">Bagagem & Voo</h6>
+                      <p class="fs--1 text-secondary mb-0">Suporte financeiro e indenização em caso de extravio ou atrasos prolongados.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap gap-3">
+                <a href="seguros.html" class="btn btn-outline-primary fw-bold px-4 py-2">Ver Detalhes dos Planos</a>
+                <a href="https://wa.me/5549999227869?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação%20rápida%20de%20seguro%20viagem%20para%20o%20meu%20destino." target="_blank" class="btn btn-success fw-bold px-4 py-2 shadow-sm">
+                  <i class="bi bi-whatsapp me-2"></i> Cotar no WhatsApp
+                </a>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/2.png" alt="" /></div>
+
+            <!-- Coluna do Card de Destaque Visual -->
+            <div class="col-lg-5">
+              <div class="card border-0 shadow-lg rounded-4 overflow-hidden bg-white p-4 p-md-5 text-center">
+                <div class="mb-3 text-success display-4">
+                  <i class="bi bi-file-earmark-medical-fill"></i>
+                </div>
+                <h3 class="fw-bold text-dark h4 mb-3">Emissão Rápida e Segura</h3>
+                <p class="text-secondary fs--1 mb-4">
+                  Receba sua apólice oficial direto no e-mail com validade internacional aceita por qualquer consulado ou imigração do mundo.
+                </p>
+                <div class="bg-light p-3 rounded-3 mb-4 text-start">
+                  <div class="d-flex justify-content-between fs--1 text-secondary mb-1">
+                    <span>Cobertura Europa (Schengen):</span>
+                    <strong class="text-dark">Disponível</strong>
+                  </div>
+                  <div class="d-flex justify-content-between fs--1 text-secondary mb-1">
+                    <span>Cobertura Estados Unidos/Mundo:</span>
+                    <strong class="text-dark">Disponível</strong>
+                  </div>
+                  <div class="d-flex justify-content-between fs--1 text-secondary">
+                    <span>Assistência em Português:</span>
+                    <strong class="text-success">24 horas</strong>
+                  </div>
+                </div>
+                <a href="https://wa.me/5549999227869?text=Olá!%20Preciso%20emitir%20um%20seguro%20viagem%20com%20urgência." target="_blank" class="btn btn-primary fw-bold w-100 py-3 shadow-sm">
+                  Garantir Meu Seguro Agora
+                </a>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/3.png" alt="" /></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/4.png" alt="" /></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-hover mb-4" style="border-radius:10px;">
-                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/5.png" alt="" /></div>
-              </div>
-            </div>
+
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->

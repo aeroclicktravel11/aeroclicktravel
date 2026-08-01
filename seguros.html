@@ -7,108 +7,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Seguro Viagem Nacional e Internacional | AeroClick Travel</title>
 
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+      .hero-section { padding-top: 13rem; padding-bottom: 5rem; background-color: #f8f9fa; }
+      .feature-card { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; border-radius: 1rem; border: none; }
+      .feature-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important; }
+      .icon-box { font-size: 2.5rem; color: #198754; }
+      .coverage-grid-item { background: #ffffff; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075); height: 100%; transition: 0.2s; }
+      .coverage-grid-item:hover { box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); }
+    </style>
   </head>
 
   <body>
     <main class="main" id="top">
       
-      <!-- MENU SUPERIOR -->
+      <!-- MENU SUPERIOR PADRÃO DA AGÊNCIA -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bg-white shadow-sm" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="110" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="110" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
               <li class="nav-item px-3"><a class="nav-link fw-medium" href="index.html">Início</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="vistos.html">Vistos</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="hoteis.html">Hotéis</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="ingressos.html">Ingressos</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="passagens.html">Passagens</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="cruzeiros.html">Cruzeiros</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="faq.html">FAQ</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="index.html#service">Serviços</a></li>
+              <li class="nav-item dropdown px-3">
+                <a class="nav-link dropdown-toggle fw-medium text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reservas & Lazer
+                </a>
+                <ul class="dropdown-menu shadow border-0 rounded-3" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item py-2 fw-medium" href="hoteis.html">Hotéis e Hospedagem</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="ingressos.html">Ingressos e Passeios</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="passagens.html">Passagens Aéreas</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="cruzeiros.html">Cruzeiros Marítimos</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium" href="chip.html">Chip Internacional</a></li>
+                  <li><a class="dropdown-item py-2 fw-medium active" href="seguros.html">Seguro Viagem</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="vistos.html">Assessoria de Vistos</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
       <!-- CONTEÚDO PRINCIPAL -->
-      <section style="padding-top: 12rem; padding-bottom: 5rem; background-color: #f8f9fa;">
+      <section class="hero-section">
         <div class="container">
           
-          <!-- Cabeçalho da Página -->
-          <div class="text-center mb-5">
-            <span class="badge bg-primary px-3 py-2 mb-2 shadow-sm">Viaje com Proteção</span>
-            <h1 class="fw-bold text-dark display-5">Seguro Viagem</h1>
-            <p class="text-secondary mt-2 mx-auto" style="max-width: 600px;">
-              Garanta assistência médica, odontológica e suporte completo 24h para imprevistos no Brasil e no exterior.
+          <!-- Título da Página -->
+          <div class="text-center mb-6">
+            <span class="badge bg-success px-3 py-2 mb-2 shadow-sm">Proteção e Tranquilidade 24h</span>
+            <h1 class="fw-bold text-dark display-5">Seguro Viagem Nacional e Internacional</h1>
+            <p class="text-secondary mt-2 mx-auto" style="max-width: 650px;">
+              Viaje para qualquer lugar do mundo sabendo que você e sua família estão protegidos contra imprevistos médicos, extravio de bagagem e acidentes.
             </p>
           </div>
 
-          <!-- Grid de Cartões -->
-          <div class="row g-4">
+          <!-- CARDS DE DESTAQUE (COBERTURAS ESSENCIAIS) -->
+          <div class="row g-4 mb-6">
             
-            <!-- Card 1: Europa e Tratado de Schengen -->
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
-                <div style="height: 220px; background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
-                <div class="card-body p-4 d-flex flex-column">
-                  <h4 class="fw-bold mb-3 text-dark">Europa (Tratado de Schengen)</h4>
-                  <p class="text-secondary mb-4" style="line-height: 1.6;">
-                    Planos em conformidade com a lei europeia, oferecendo cobertura médica mínima obrigatória de 30 mil euros.
-                  </p>
-                  <a href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20um%20seguro%20viagem%20para%20a%20Europa." target="_blank" class="mt-auto btn btn-primary fw-bold py-2 shadow-sm">
-                    Cotar Seguro 
-                  </a>
-                </div>
+              <div class="card feature-card h-100 p-4 bg-white shadow-sm">
+                <div class="icon-box mb-3"><i class="bi bi-heart-pulse-fill"></i></div>
+                <h4 class="fw-bold text-dark fs-5 mb-3">Assistência Médica Completa</h4>
+                <p class="text-secondary fs--1 mb-4" style="line-height: 1.6;">
+                  Cobertura integral para despesas médicas, hospitalares e farmacêuticas em casos de urgência ou emergência, 24 horas por dia, 7 dias por semana, com atendimento na sua língua.
+                </p>
+                <a href="https://wa.me/5549999227869?text=Olá! Gostaria de cotar um seguro viagem com assistência médica." target="_blank" class="mt-auto btn btn-outline-success fw-bold btn-sm">
+                  Cotar Plano Médico
+                </a>
               </div>
             </div>
 
-            <!-- Card 2: Estados Unidos e Américas -->
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
-                <div style="height: 220px; background-image: url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
-                <div class="card-body p-4 d-flex flex-column">
-                  <h4 class="fw-bold mb-3 text-dark">Estados Unidos & Américas</h4>
-                  <p class="text-secondary mb-4" style="line-height: 1.6;">
-                    Proteção indispensável contra custos médicos elevados em hospitais norte-americanos, com suporte de emergência.
-                  </p>
-                  <a href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20um%20seguro%20viagem%20para%20os%20Estados%20Unidos." target="_blank" class="mt-auto btn btn-primary fw-bold py-2 shadow-sm">
-                    Cotar Seguro 
-                  </a>
-                </div>
+              <div class="card feature-card h-100 p-4 bg-white shadow-sm">
+                <div class="icon-box mb-3 text-primary"><i class="bi bi-shield-check"></i></div>
+                <h4 class="fw-bold text-dark fs-5 mb-3">Doenças Preexistentes & Gestantes</h4>
+                <p class="text-secondary fs--1 mb-4" style="line-height: 1.6;">
+                  Planos especiais que cobrem agudizações de doenças preexistentes e acompanhamento de gestantes até a 32ª semana de gestação com total segurança clínica.
+                </p>
+                <a href="https://wa.me/5549999227869?text=Olá! Gostaria de saber mais sobre seguro para gestantes e doenças preexistentes." target="_blank" class="mt-auto btn btn-outline-primary fw-bold btn-sm">
+                  Saber Mais
+                </a>
               </div>
             </div>
 
-            <!-- Card 3: Seguro Nacional e Cruzeiros -->
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden bg-white">
-                <div style="height: 220px; background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
-                <div class="card-body p-4 d-flex flex-column">
-                  <h4 class="fw-bold mb-3 text-dark">Nacional e Marítimo (Cruzeiros)</h4>
-                  <p class="text-secondary mb-4" style="line-height: 1.6;">
-                    Coberturas especiais para viagens pelo Brasil e cruzeiros em alto-mar, incluindo extravio de bagagem e despesas farmacêuticas.
-                  </p>
-                  <a href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20cotar%20um%20seguro%20viagem%20nacional%20ou%20mar%C3%ADtimo." target="_blank" class="mt-auto btn btn-primary fw-bold py-2 shadow-sm">
-                    Cotar Seguro 
-                  </a>
-                </div>
+              <div class="card feature-card h-100 p-4 bg-white shadow-sm">
+                <div class="icon-box mb-3 text-warning"><i class="bi bi-luggage-fill"></i></div>
+                <h4 class="fw-bold text-dark fs-5 mb-3">Bagagem & Atrasos de Voo</h4>
+                <p class="text-secondary fs--1 mb-4" style="line-height: 1.6;">
+                  Indenização e suporte em caso de extravio definitivo de bagagem, além de coberturas para despesas essenciais geradas por atrasos prolongados de voos.
+                </p>
+                <a href="https://wa.me/5549999227869?text=Olá! Quero cotar um seguro viagem com cobertura de bagagem." target="_blank" class="mt-auto btn btn-outline-warning text-dark fw-bold btn-sm">
+                  Proteger Minha Bagagem
+                </a>
               </div>
             </div>
 
           </div>
+
+          <!-- TODOS OS PLANOS COBREM (ESTILO VITRINE) -->
+          <div class="text-center mb-5">
+            <h3 class="fw-bold text-dark">Diferenciais Garantidos em Nossos Planos</h3>
+            <p class="text-secondary">Conheça as principais proteções inclusas nas melhores seguradoras do mercado.</p>
+          </div>
+
+          <div class="row g-4 mb-6">
+            <div class="col-md-4 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-bandaid text-success fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Prática de Esportes</h6>
+                <p class="text-secondary fs--2 mb-0">Cobertura para esportes amadores e de lazer.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-water text-primary fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Cruzeiros Marítimos</h6>
+                <p class="text-secondary fs--2 mb-0">Válido para roteiros fluviais, marítimos e paradas em solo.</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-hospital text-danger fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Assistência por Evento</h6>
+                <p class="text-secondary fs--2 mb-0">Renovação de limite de cobertura a cada novo evento médico.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-capsule text-success fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Despesas Farmacêuticas</h6>
+                <p class="text-secondary fs--2 mb-0">Reembolso de remédios prescritos em atendimento.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-airplane text-warning fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Regresso Sanitário</h6>
+                <p class="text-secondary fs--2 mb-0">Repatriação médica de retorno ao Brasil em UTI aérea.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-headset text-info fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Atendimento 24h</h6>
+                <p class="text-secondary fs--2 mb-0">Suporte telefônico, e-mail e WhatsApp em português.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="coverage-grid-item">
+                <i class="bi bi-file-earmark-text text-secondary fs-2 mb-2 d-block"></i>
+                <h6 class="fw-bold text-dark mb-1">Auxílio Jurídico</h6>
+                <p class="text-secondary fs--2 mb-0">Suporte em caso de despesas com fiança judicial ou advogados.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BANNER DE CHAMADA PARA AÇÃO (WHATSAPP) -->
+          <div class="bg-primary text-white p-5 rounded-4 text-center shadow-sm">
+            <h2 class="fw-bold text-white mb-3">Pronto para viajar sem preocupações?</h2>
+            <p class="mb-4 mx-auto" style="max-width: 600px; opacity: 0.9;">
+              Fale agora mesmo com um de nossos consultores especializados pelo WhatsApp e encontre o plano perfeito para o seu destino e orçamento!
+            </p>
+            <a href="https://wa.me/5549999227869?text=Olá! Gostaria de fazer uma cotação de seguro viagem com a AeroClick Travel." target="_blank" class="btn btn-success btn-lg fw-bold px-5 shadow">
+              <i class="bi bi-whatsapp me-2"></i> Chamar no WhatsApp
+            </a>
+          </div>
+
         </div>
       </section>
 
       <!-- RODAPÉ -->
-      <div class="py-5 text-center bg-white border-top">
+      <div class="py-5 text-center bg-white border-top mt-5">
         <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
         <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">AEROCLICKTRAVEL.COM.BR - Ministério do Turismo - Cadastur 68.169.276/0001-31</p>
       </div>
+
     </main>
 
+    <!-- JavaScript -->
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
   </body>
 </html>

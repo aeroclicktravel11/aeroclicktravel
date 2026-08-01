@@ -61,7 +61,7 @@ const colors = {
   success: "#00d27a",
   info: "#27bcfd",
   warning: "#FFC928",
-  danger: "#EE4D47",
+  // danger: "#EE4D47",
   light: "#F9FAFD",
   dark: "#000",
 };

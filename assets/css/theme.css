@@ -19,8 +19,8 @@
   --bs-indigo: #6237FF;
   --bs-purple: #A1B0FC;
   --bs-pink: #D42DA3;
-  --bs-red: #DF6951;
-  --bs-orange: #DF6951;
+  /* --bs-red: #DF6951; */
+  /* --bs-orange: #DF6951; */
   --bs-yellow: #F1A501;
   --bs-green: #79B93C;
   --bs-teal: #006380;
@@ -33,8 +33,8 @@
   --bs-success: #79B93C;
   --bs-info: #006380;
   --bs-warning: #F1A501;
-  --bs-danger: #DF6951;
-  --bs-light: #F0F4F9;
+  /* --bs-danger: #DF6951;
+  --bs-light: #F0F4F9; */
   --bs-dark: #212832;
   --bs-font-sans-serif: "Poppins", "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --bs-font-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

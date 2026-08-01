@@ -10,31 +10,31 @@
     <loc>https://aeroclicktravel.com.br/hoteis.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://aeroclicktravel.com.br/ingressos.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://aeroclicktravel.com.br/passagens.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://aeroclicktravel.com.br/cruzeiros.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://aeroclicktravel.com.br/faq.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.99</priority>
     
   </url>
 
@@ -42,13 +42,13 @@
     <loc>https://aeroclicktravel.com.br/vistos.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.99</priority>
   </url>
   <url>
     <loc>https://aeroclicktravel.com.br/seguros.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.99</priority>
   </url>
   <url>
 
@@ -56,7 +56,17 @@
     <loc>https://aeroclicktravel.com.br/chip.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.99</priority>
+  </url>
+  <url>
+
+
+
+ <url>
+    <loc>https://aeroclicktravel.com.br/blog.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.99</priority>
   </url>
   <url>
 
@@ -65,7 +75,7 @@
     <loc>https://aeroclicktravel.com.br/sobre.html</loc>
     <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
 
