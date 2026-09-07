@@ -2,6 +2,10 @@
 <html lang="en-US" dir="ltr">
 
   <head>
+     
+
+    <link rel="stylesheet" href="https://static.onertravel.com/widget/search/production/styles.css">
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TJDKWY8DT"></script>
 <script>
@@ -27,8 +31,6 @@
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    
-    
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="theme-color" content="#ffffff">
@@ -39,6 +41,9 @@
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- onertravel-widget-container  -->
+    <link rel="stylesheet" href="https://static.onertravel.com/widget/search/production/styles.css">
 
 
     <!-- Meta Pixel Code -->
@@ -58,8 +63,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-
 
 <style>
   /* Remove qualquer elemento decorativo de fundo dos cards de serviço */
@@ -82,10 +85,7 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
   }
 </style>
 
-    
-
   </head>
-
 
   <body>
 
@@ -93,61 +93,124 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bg-white shadow-sm" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="110" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            
-            <!-- Menu Principal Atualizado com Dropdown de Reservas -->
-            <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="index.html">Início</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="#service">Serviços</a></li>
-              
-              <!-- Menu Dropdown: Reservas e Produtos -->
-              <li class="nav-item dropdown px-3">
-                <a class="nav-link dropdown-toggle fw-medium text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Reservas & Lazer
-                </a>
-                <ul class="dropdown-menu shadow border-0 rounded-3" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item py-2 fw-medium" href="hoteis.html">Hotéis e Hospedagem</a></li>
-                  <li><a class="dropdown-item py-2 fw-medium" href="ingressos.html">Ingressos e Passeios</a></li>
-                  <li><a class="dropdown-item py-2 fw-medium" href="passagens.html">Passagens Aéreas</a></li>
-                  <li><a class="dropdown-item py-2 fw-medium" href="cruzeiros.html">Cruzeiros Marítimos</a></li>
-                  <li><a class="dropdown-item py-2 fw-medium" href="chip.html">Chip Internacional</a></li>
-                  <li><a class="dropdown-item py-2 fw-medium" href="vistos.html">Visto</a></li>
-                  <li><a class="dropdown-item py-2 fw-medium" href="seguros.html">Seguro de Viagem</a></li>
-                </ul>
-              </li>
 
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="#destination">Destinos</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="#booking">Como Funciona</a></li>
-              <li class="nav-item px-3"><a class="nav-link fw-medium" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
-            </ul>
+      <!-- ===============================================-->
+      <!-- HEADER / CABEÇALHO CORRIGIDO                  -->
+      <!-- ===============================================-->
+      <section class="hero-header-section" style="position: relative; background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)), url('assets/img/hero/hero-bg.svg') center/cover no-repeat; padding-top: 15px; padding-bottom: 3rem;">
+        
+        <div class="container">
+          
+          <!-- BARRA SUPERIOR (Ícones Sociais & Menu no Ícone de Pessoa) -->
+          <div class="d-flex justify-content-end align-items-center pt-2 pb-2 gap-3">
+            <a href="https://www.facebook.com/share/14k6wHnBBuP/" target="_blank" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/aeroclicktravel/" target="_blank" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contato@aeroclicktravel.com.br" class="text-white fs-5"><i class="bi bi-envelope"></i></a>
+            <a href="https://wa.me/5549999227869" target="_blank" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a>
+            <span class="text-white-50">|</span>
+            
+            <!-- MENU SUSPENSO NO ÍCONE DE PESSOA -->
+            <div class="dropdown">
+              <a href="#" class="text-white fs-5 dropdown-toggle hide-arrow" id="userMenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Menu e Acesso">
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3 mt-2" aria-labelledby="userMenuDropdown" style="min-width: 220px;">
+                <li><a class="dropdown-item py-2 fw-medium" href="index.html"><i class="bi bi-house-door me-2 text-primary"></i> Início</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="#service"><i class="bi bi-gear me-2 text-primary"></i> Serviços</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><h6 class="dropdown-header text-uppercase fs--2 fw-bold text-dark">Reservas & Lazer</h6></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="hoteis.html">Hotéis e Hospedagem</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="ingressos.html">Ingressos e Passeios</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="passagens.html">Passagens Aéreas</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="cruzeiros.html">Cruzeiros Marítimos</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="chip.html">Chip Internacional</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="vistos.html">Visto</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="seguros.html">Seguro de Viagem</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="#destination"><i class="bi bi-geo-alt me-2 text-primary"></i> Destinos</a></li>
+                <li><a class="dropdown-item py-2 fw-medium" href="#booking"><i class="bi bi-info-circle me-2 text-primary"></i> Como Funciona</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- NAVBAR / MENU PRINCIPAL COM LOGO CORRIGIDO (MAIOR) -->
+          <div class="row align-items-center py-2">
+            
+            <!-- Logo da AeroClick Aumentado (height: 110px) -->
+            <div class="col-lg-3 col-md-4 col-6">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg" height="110" alt="AeroClick Travel" style="filter: brightness(0) invert(1);" />
+              </a>
+            </div>
+
+            <!-- Menu Centralizado em Pílula -->
+            <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+              <nav style="background-color: rgba(11, 23, 39, 0.75); backdrop-filter: blur(8px); border-radius: 50px; padding: 10px 25px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+                <ul class="nav align-items-center gap-4 mb-0">
+                  <li><a class="text-white text-decoration-none fw-medium" href="index.html">Início</a></li>
+                  <li><a class="text-white text-decoration-none fw-medium" href="#service">Serviços</a></li>
+                  <li><a class="text-white text-decoration-none fw-medium" href="hoteis.html">Reservas</a></li>
+                  <li><a class="text-white text-decoration-none fw-medium" href="#destination">Destinos</a></li>
+                  <li><a class="text-white text-decoration-none fw-medium" href="#booking">Como Funciona</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Botão Fale Conosco -->
+            <div class="col-lg-3 col-md-8 col-6 text-end">
+              <a href="https://wa.me/5549999227869" target="_blank" class="btn btn-outline-light rounded-pill px-4 fw-medium" style="border-width: 2px;">
+                Fale Conosco
+              </a>
+            </div>
 
           </div>
-        </div>
-      </nav>
 
-      <section style="padding-top: 9rem;">
-        <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
-        </div>
-        <!--/.bg-holder-->
+          <!-- SLOGAN CENTRALIZADO SOBRE O BANNER -->
+          <div class="text-center py-5">
+            <h1 class="text-white fw-light" style="font-size: 2.8rem; letter-spacing: 2px; text-shadow: 0 2px 15px rgba(0,0,0,0.6); font-family: 'Volkhov', serif;">
+              o mundo a um clique de distância
+            </h1>
+          </div>
 
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img" src="assets/img/hero/hero-img.png" alt="hero-header" /></div>
-            <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-              <h4 class="fw-bold text-danger mb-3">O Mundo a um Clique de Distância</h4>
-              <h1 class="hero-title">Assessoria de Vistos e Passagens Internacionais</h1>
-              <p class="mb-4 fw-medium">Descomplicamos a burocracia para você viajar com segurança.<br class="d-none d-xl-block" />Especialistas em vistos, passagens aéreas e seguro-viagem.<br class="d-none d-xl-block" />Sua única preocupação será fazer as malas.</p>
-              <div class="text-center text-md-start"> 
-                <a class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20consultor%20da%20AeroClick." target="_blank" role="button">Falar com um Consultor</a>
+        </div>
+      </section>
+
+
+      <!-- ===============================================-->
+      <!-- SEÇÃO HERO / BUSCADOR EM CIMA E TEXTOS ABAIXO   -->
+      <!-- ===============================================-->
+      <section style="background-color: #f8f9fa; position: relative; padding-bottom: 4rem; padding-top: 2rem;">
+
+        <div class="container position-relative" style="z-index: 3;">
+          
+          <!-- Buscador Integrado da Oner Travel em Cima -->
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 col-xl-11">
+              <div id="wrapper" style="background: #ffffff; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.12); padding: 25px; margin-top: -60px; position: relative; z-index: 10;">
+                <befly-widget language="pt-br" new-tab="true"></befly-widget>
               </div>
             </div>
           </div>
+
+          <!-- Textos Explicativos Logo Abaixo -->
+          <div class="row justify-content-center text-center mt-4">
+            <div class="col-lg-8">
+              <h5 class="fw-bold text-danger mb-2">O Mundo a um Clique de Distância</h5>
+              <h2 class="fw-bold text-dark mb-3" style="font-size: 1.8rem;">Assessoria de Vistos e Passagens Internacionais</h2>
+              <p class="text-secondary mb-4 fw-medium fs-0" style="line-height: 1.6;">
+                Descomplicamos a burocracia para você viajar com segurança.<br>
+                Especialistas em vistos, passagens aéreas e seguro-viagem.<br>
+                <strong>Sua única preocupação será fazer as malas.</strong>
+              </p>
+            </div>
+          </div>
+
         </div>
-      </section>   
-      
+      </section> 
+
+      <!-- Script de funcionamento do buscador da Oner Travel -->
+      <script type="text/javascript" src="https://static.onertravel.com/widget/search/production/widget-befly.js"></script>
+           
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="pt-5 pt-md-9" id="service">
@@ -519,34 +582,27 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
         </div>
       </section>
 
-
       <!-- POPUP FLUTUANTE DE SEGURO VIAGEM -->
-<div id="seguroPopup" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999; max-width: 280px; font-family: 'Poppins', sans-serif;">
-  
-  <div style="position: relative; background-color: #8cc63f; border-radius: 16px; padding: 35px 20px 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 2px solid #ffffff; text-align: center;">
-    
-    <!-- Botão Fechar (X) -->
-    <button onclick="document.getElementById('seguroPopup').style.display='none';" style="position: absolute; top: 10px; right: 10px; background: #6da527; color: white; border: none; border-radius: 50%; width: 26px; height: 26px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: 0.2s;" onmouseover="this.style.background='#55821c'" onmouseout="this.style.background='#6da527'">×</button>
+      <div id="seguroPopup" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999; max-width: 280px; font-family: 'Poppins', sans-serif;">
+        <div style="position: relative; background-color: #8cc63f; border-radius: 16px; padding: 35px 20px 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 2px solid #ffffff; text-align: center;">
+          
+          <button onclick="document.getElementById('seguroPopup').style.display='none';" style="position: absolute; top: 10px; right: 10px; background: #6da527; color: white; border: none; border-radius: 50%; width: 26px; height: 26px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: 0.2s;" onmouseover="this.style.background='#55821c'" onmouseout="this.style.background='#6da527'">×</button>
 
-    <!-- Círculo com o Logo sobreposto -->
-    <div style="position: absolute; top: -35px; left: 50%; transform: translateX(-50%); width: 75px; height: 75px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #ffffff; overflow: hidden;">
-      <!-- Substitua o src abaixo pela imagem do seu logo ou ícone de seguro -->
-      <img src="assets/img/favicons/AeroClickTravel.png" alt="AeroClick Seguros" style="width: 50px; height: 50px; object-fit: contain;" />
-    </div>
+          <div style="position: absolute; top: -35px; left: 50%; transform: translateX(-50%); width: 75px; height: 75px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #ffffff; overflow: hidden;">
+            <img src="assets/img/favicons/AeroClickTravel.png" alt="AeroClick Seguros" style="width: 50px; height: 50px; object-fit: contain;" />
+          </div>
 
-    <!-- Textos explicativos -->
-    <h4 style="color: #ffffff; font-size: 1.15rem; font-weight: 700; margin-top: 15px; margin-bottom: 8px; line-height: 1.3;">Vai viajar?</h4>
-    <p style="color: #ffffff; font-size: 0.9rem; font-weight: 500; margin-bottom: 20px; line-height: 1.4;">
-      Conheça o melhor seguro viagem do Brasil e viaje protegido.
-    </p>
+          <h4 style="color: #ffffff; font-size: 1.15rem; font-weight: 700; margin-top: 15px; margin-bottom: 8px; line-height: 1.3;">Vai viajar?</h4>
+          <p style="color: #ffffff; font-size: 0.9rem; font-weight: 500; margin-bottom: 20px; line-height: 1.4;">
+            Conheça o melhor seguro viagem do Brasil e viaje protegido.
+          </p>
 
-    <!-- Botão Contrate Aqui (WhatsApp) -->
-    <a href="https://wa.me/5549999227869?text=Olá!%20Vi%20o%20banner%20no%20site%20e%20gostaria%20de%20contratar%20um%20seguro%20viagem." target="_blank" style="display: inline-block; background-color: #72a42b; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 10px 24px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.2s;" onmouseover="this.style.backgroundColor='#5e8822'" onmouseout="this.style.backgroundColor='#72a42b'">
-      Contrate aqui
-    </a>
+          <a href="https://wa.me/5549999227869?text=Olá!%20Vi%20o%20banner%20no%20site%20e%20gostaria%20de%20contratar%20um%20seguro%20viagem." target="_blank" style="display: inline-block; background-color: #72a42b; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 10px 24px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.2s;" onmouseover="this.style.backgroundColor='#5e8822'" onmouseout="this.style.backgroundColor='#72a42b'">
+            Contrate aqui
+          </a>
 
-  </div>
-</div>
+        </div>
+      </div>
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
@@ -560,13 +616,13 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">A Agência</h4>
               <ul class="list-unstyled mb-0">
-               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="sobre.html">Sobre nós</a></li>               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Carreiras</a></li>
+               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="sobre.html">Sobre nós</a></li>              <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Carreiras</a></li>
               </ul>
             </div>
             <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contato</h4>
               <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="faq.html">Ajuda / FAQ</a></li>               <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">WhatsApp</a></li>
+              <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="faq.html">Ajuda / FAQ</a></li>              <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">WhatsApp</a></li>
                 <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="mailto:contato@aeroclicktravel.com.br">E-mail</a></li>
               </ul>
             </div>
@@ -594,14 +650,11 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
         <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
         <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
         <p class="mb-0 text-secondary fs--2 fw-medium mt-2">AEROCLICKTRAVEL.COM.BR - Ministério do Turismo - Cadastur 68.169.276/0001-31</p>
- 
       </div>
     </main>
-    <!-- ===============================================-->
+    <!-- ========================= ======================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
-
-
 
 
     <!-- ===============================================-->
@@ -610,7 +663,6 @@ src="https://www.facebook.com/tr?id=1780110243124328&ev=PageView&noscript=1"
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script> -->
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
 
