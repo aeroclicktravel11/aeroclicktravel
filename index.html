@@ -74,6 +74,17 @@
         position: relative;
         z-index: 2;
       }
+
+      /* Ajustes de Responsividade para Dispositivos Móveis */
+      @media (max-width: 991.98px) {
+        .hero-header-section {
+          padding-bottom: 3rem !important;
+        }
+        #wrapper {
+          margin-top: 10px !important;
+          padding: 15px !important;
+        }
+      }
     </style>
 
   </head>
@@ -86,38 +97,38 @@
     <main class="main" id="top">
 
       <!-- ===============================================-->
-      <!-- HEADER / BLOCO AZUL INTEGRADO (ESTILO DECOLAR)   -->
+      <!-- HEADER / BLOCO AZUL INTEGRADO E RESPONSIVO     -->
       <!-- ===============================================-->
-      <section style="position: relative; background: linear-gradient(135deg, #0d3b66 0%, #001f3f 100%); padding-top: 20px; padding-bottom: 5rem;">
+      <section class="hero-header-section" style="position: relative; background: linear-gradient(135deg, #0d3b66 0%, #001f3f 100%); padding-top: 20px; padding-bottom: 6rem;">
         
         <div class="container">
           
-          <!-- BARRA SUPERIOR (Ícones Sociais & Televendas) -->
-          <div class="d-flex justify-content-between align-items-center pt-2 pb-3 border-bottom border-light border-opacity-25 mb-4">
+          <!-- BARRA SUPERIOR (Ícones Sociais & Botão) -->
+          <div class="d-flex justify-content-between align-items-center pt-2 pb-3 border-bottom border-light border-opacity-25 mb-3">
             
             <!-- Logo da AeroClick -->
             <div>
               <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo.svg" height="85" alt="AeroClick Travel" style="filter: brightness(0) invert(1);" />
+                <img src="assets/img/logo.svg" class="img-fluid" style="max-height: 75px; filter: brightness(0) invert(1);" alt="AeroClick Travel" />
               </a>
             </div>
 
-            <!-- Contatos e Redes Sociais no Topo -->
-            <div class="d-flex align-items-center gap-3">
+            <!-- Redes Sociais e Contato -->
+            <div class="d-flex align-items-center gap-2 gap-md-3">
               <a href="https://www.facebook.com/share/14k6wHnBBuP/" target="_blank" class="text-white fs-5"><i class="fab fa-facebook-f"></i></a>
               <a href="https://www.instagram.com/aeroclicktravel/" target="_blank" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
-              <a href="https://wa.me/5549999227869" target="_blank" class="btn btn-light rounded-pill px-4 fw-bold text-primary shadow-sm" style="font-size: 0.9rem;">
+              <a href="https://wa.me/5549999227869" target="_blank" class="btn btn-light rounded-pill px-3 px-md-4 fw-bold text-primary shadow-sm" style="font-size: 0.85rem;">
                 <i class="bi bi-whatsapp me-1"></i> Fale Conosco
               </a>
             </div>
 
           </div>
 
-          <!-- NAVBAR / MENU CENTRALIZADO EM PÍLULA -->
-          <div class="row align-items-center py-2 mb-4">
+          <!-- NAVBAR / MENU CENTRALIZADO RESPONSIVO -->
+          <div class="row align-items-center py-2 mb-3">
             <div class="col-12 d-flex justify-content-center">
-              <nav style="background-color: rgba(255, 255, 255, 0.12); backdrop-filter: blur(10px); border-radius: 50px; padding: 10px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
-                <ul class="nav align-items-center gap-4 mb-0 flex-nowrap" style="white-space: nowrap;">
+              <nav class="table-responsive" style="background-color: rgba(255, 255, 255, 0.12); backdrop-filter: blur(10px); border-radius: 50px; padding: 8px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); max-width: 100%;">
+                <ul class="nav align-items-center gap-3 gap-md-4 mb-0 flex-nowrap" style="white-space: nowrap; font-size: 0.95rem;">
                   <li><a class="text-white text-decoration-none fw-medium" href="index.html">Início</a></li>
                   <li><a class="text-white text-decoration-none fw-medium" href="#service">Serviços</a></li>
                   <li><a class="text-white text-decoration-none fw-medium" href="hoteis.html">Reservas</a></li>
@@ -129,17 +140,17 @@
           </div>
 
           <!-- TÍTULO DESTAQUE DENTRO DO BLOCO AZUL -->
-          <div class="text-start py-2 px-md-3 mb-4">
-            <h1 class="text-white fw-bold mb-1" style="font-size: 2.3rem; text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+          <div class="text-center text-md-start py-2 px-md-3 mb-4">
+            <h1 class="text-white fw-bold mb-1" style="font-size: clamp(1.8rem, 3vw, 2.3rem); text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
               Passagens Aéreas, Hotéis e Viagens
             </h1>
             <p class="text-white-50 fs-0 m-0">O mundo a um clique de distância com a AeroClick Travel.</p>
           </div>
 
-          <!-- WIDGET DA ONER TRAVEL INTEGRADO DIRETAMENTE NA FAIXA AZUL -->
+          <!-- WIDGET DA ONER TRAVEL INTEGRADO NA FAIXA AZUL -->
           <div class="row justify-content-center">
             <div class="col-12">
-              <div id="wrapper" style="background: #ffffff; border-radius: 14px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); padding: 25px;">
+              <div id="wrapper" style="background: #ffffff; border-radius: 14px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); padding: 20px; margin-top: 10px;">
                 <befly-widget language="pt-br" new-tab="true"></befly-widget>
               </div>
             </div>
