@@ -105,7 +105,12 @@
       .card-slider {
         display: flex;
         gap: 24px;
-        transition: transform 0.6s ease-in-out;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .card-slider::-webkit-scrollbar {
+        display: none;
       }
     </style>
 
@@ -193,12 +198,23 @@
       </section>
 
       <script type="text/javascript" src="https://static.onertravel.com/widget/search/production/widget-befly.js"></script>
-         <!-- 1. VOOS INTERNACIONAIS -->
+         
+      <!-- 1. VOOS INTERNACIONAIS -->
       <section class="container py-5">
-        <h3 class="mb-4 fw-bold">Voos Internacionais</h3>
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h3 class="fw-bold mb-0">Voos Internacionais</h3>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('voosSlider', 'prev')">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('voosSlider', 'next')">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
 
         <div class="carousel-container position-relative">
-          <div class="card-slider d-flex gap-4 pb-3" id="voosSlider" style="overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; width: 100%;">
+          <div class="card-slider d-flex gap-4 pb-3" id="voosSlider">
             
             <!-- Card 1: Madri -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
@@ -314,11 +330,22 @@
       
       <!-- 2. DESTINOS NACIONAIS (EM CARROSSEL) -->
       <section class="container py-5" id="destinos-nacionais">
-        <h3 class="mb-4 fw-bold">Destinos Nacionais</h3>
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h3 class="fw-bold mb-0">Destinos Nacionais</h3>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('nacionaisSlider', 'prev')">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('nacionaisSlider', 'next')">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
         <div class="carousel-container position-relative">
-          <div class="card-slider d-flex gap-4 pb-3" id="nacionaisSlider" style="overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; width: 100%;">
+          <div class="card-slider d-flex gap-4 pb-3" id="nacionaisSlider">
             
-            <!-- Card 1: Balneário Camboriú (Existente) -->
+            <!-- Card 1: Balneário Camboriú -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/camboriu.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Balneário Camboriú" style="object-fit: cover;">
@@ -330,7 +357,7 @@
               </div>
             </div>
 
-            <!-- Card 2: Rio de Janeiro (Existente) -->
+            <!-- Card 2: Rio de Janeiro -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/rio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Rio de Janeiro" style="object-fit: cover;">
@@ -339,11 +366,10 @@
                 <h5 class="fw-bold">Rio de Janeiro | RJ</h5>
                 <p class="text-muted small mb-3">Zona Sul & Praias</p>
                 <a href="https://www.comprarviagem.com.br/aeroclicktravel/flight_list?departureDate=2026-11-04&returnDate=2026-11-11&isRoundTrip=true&adultCount=1&infantCount=0&childCount=0&departureAirport=SAO&arrivalAirport=SCL" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver passagens</a>
-
               </div>
             </div>
 
-            <!-- Card 3: Maceió (Existente) -->
+            <!-- Card 3: Maceió -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/maceio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Maceió" style="object-fit: cover;">
@@ -355,7 +381,7 @@
               </div>
             </div>
 
-            <!-- NOVO Card 4: Gramado | RS -->
+            <!-- Card 4: Gramado -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/gramado.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Gramado" style="object-fit: cover;">
@@ -367,7 +393,7 @@
               </div>
             </div>
 
-            <!-- NOVO Card 5: Fernando de Noronha | PE -->
+            <!-- Card 5: Fernando de Noronha -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/noronha.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Fernando de Noronha" style="object-fit: cover;">
@@ -379,7 +405,7 @@
               </div>
             </div>
 
-            <!-- NOVO Card 6: Salvador | BA -->
+            <!-- Card 6: Salvador -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/salvador.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Salvador" style="object-fit: cover;">
@@ -391,7 +417,7 @@
               </div>
             </div>
 
-            <!-- NOVO Card 7: Florianópolis | SC -->
+            <!-- Card 7: Florianópolis -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/florianopolis.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Florianópolis" style="object-fit: cover;">
@@ -403,7 +429,7 @@
               </div>
             </div>
 
-            <!-- NOVO Card 8: Foz do Iguaçu | PR -->
+            <!-- Card 8: Foz do Iguaçu -->
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
                 <img src="assets/img/dest/foz.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Foz do Iguaçu" style="object-fit: cover;">
@@ -418,11 +444,23 @@
           </div>
         </div>
       </section>
-      <!-- 3. RESERVAS DE HOTÉIS (EM CARROSSEL) -->
-      <section class="container" id="hoteis-reservas">
-        <h3 class="mb-4 fw-bold">Reservas de Hotéis</h3>
-        <div class="carousel-container">
-          <div class="card-slider" id="reservasHoteisSlider">
+
+      <!-- 3. RESERVAS DE HOTÉIS -->
+      <section class="container py-5" id="hoteis-reservas">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h3 class="fw-bold mb-0">Reservas de Hotéis</h3>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('reservasHoteisSlider', 'prev')">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('reservasHoteisSlider', 'next')">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-container position-relative">
+          <div class="card-slider d-flex gap-4 pb-3" id="reservasHoteisSlider">
             
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
@@ -461,11 +499,22 @@
         </div>
       </section>
 
-      <!-- 4. HOTÉIS EM DESTAQUE (EM CARROSSEL) -->
-      <section class="container">
-        <h3 class="mb-4 fw-bold">Hotéis em Destaque</h3>
-        <div class="carousel-container">
-          <div class="card-slider" id="hoteisDestaqueSlider">
+      <!-- 4. HOTÉIS EM DESTAQUE -->
+      <section class="container py-5">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h3 class="fw-bold mb-0">Hotéis em Destaque</h3>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('hoteisDestaqueSlider', 'prev')">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('hoteisDestaqueSlider', 'next')">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-container position-relative">
+          <div class="card-slider d-flex gap-4 pb-3" id="hoteisDestaqueSlider">
             
             <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
               <div style="height: 160px; overflow: hidden;">
@@ -504,12 +553,23 @@
         </div>
       </section>
 
-      <!-- 5. NOSSOS DESTINOS MAIS PROCURADOS (EM CARROSSEL) -->
-      <section id="destination">
+      <!-- 5. NOSSOS DESTINOS MAIS PROCURADOS -->
+      <section id="destination" class="py-5">
         <div class="container">
-          <h3 class="mb-4 fw-bold">Nossos Destinos Mais Procurados</h3>
-          <div class="carousel-container">
-            <div class="card-slider" id="destinosProcuradosSlider">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3 class="fw-bold mb-0">Nossos Destinos Mais Procurados</h3>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('destinosProcuradosSlider', 'prev')">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('destinosProcuradosSlider', 'next')">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-container position-relative">
+            <div class="card-slider d-flex gap-4 pb-3" id="destinosProcuradosSlider">
               
               <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
                 <div style="height: 160px; overflow: hidden;">
@@ -610,39 +670,79 @@
 
     </main>
 
+    <!-- SCRIPTS ESSENCIAIS -->
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
 
-    <script>
-      function initSlider(sliderId) {
-        const slider = document.getElementById(sliderId);
-        if (!slider) return;
-        
-        const cards = slider.children;
-        let currentIndex = 0;
-        const cardWidth = cards[0].offsetWidth + 24;
-        
-        function autoSlide() {
-          currentIndex++;
-          if (currentIndex > cards.length - 2) {
-            currentIndex = 0;
-          }
-          slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-        }
-        setInterval(autoSlide, 5000);
-      }
+    <!-- SCRIPT CORRIGIDO PARA OS BOTÕES E O AUTO-SCROLL -->
+ <script>
+  function initInfiniteSlider(sliderId) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+    
+    // Captura os cards originais antes de duplicar
+    const originalCards = Array.from(slider.children);
+    if (originalCards.length === 0) return;
 
-      document.addEventListener("DOMContentLoaded", function () {
-        initSlider("voosSlider");
-        initSlider("nacionaisSlider");
-        initSlider("reservasHoteisSlider");
-        initSlider("hoteisDestaqueSlider");
-        initSlider("destinosProcuradosSlider");
-      });
-    </script>
+    // Clona os elementos via DOM (evita quebras de estrutura de texto)
+    originalCards.forEach(card => {
+      const clonedCard = card.cloneNode(true);
+      // Remove IDs dos elementos clonados para evitar conflitos na página
+      if (clonedCard.id) clonedCard.removeAttribute('id');
+      clonedCard.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+      slider.appendChild(clonedCard);
+    });
+    
+    const allCards = slider.children;
+    let currentIndex = 0;
+    const totalOriginalCards = originalCards.length;
+    
+    slider.style.transition = 'transform 0.5s ease-in-out';
+    
+    function autoSlide() {
+      const cardWidth = allCards[0].offsetWidth;
+      const gap = 24; // Alinhe com o espaçamento gap-4 (24px) do seu CSS
+      const fullCardStep = cardWidth + gap;
+      
+      // Calcula quantos cards estão visíveis na tela
+      const containerWidth = slider.parentElement.offsetWidth;
+      const visibleCards = Math.max(1, Math.round(containerWidth / fullCardStep));
+      
+      // Avança o bloco inteiro de cards visíveis de uma vez só
+      currentIndex += visibleCards;
+      
+      slider.style.transition = 'transform 0.5s ease-in-out';
+      slider.style.transform = `translateX(-${currentIndex * fullCardStep}px)`;
+    }
+    
+    // Escuta o fim da animação para fazer o reset invisível de direita para esquerda
+    slider.addEventListener('transitionend', () => {
+      const cardWidth = allCards[0].offsetWidth;
+      const gap = 24;
+      const fullCardStep = cardWidth + gap;
+      
+      if (currentIndex >= totalOriginalCards) {
+        slider.style.transition = 'none';
+        currentIndex = currentIndex % totalOriginalCards;
+        slider.style.transform = `translateX(-${currentIndex * fullCardStep}px)`;
+      }
+    });
+    
+    // Inicia o intervalo de rotação automática
+    setInterval(autoSlide, 3500);
+  }
+
+  // Inicializa os carrosséis da AeroClick
+  document.addEventListener("DOMContentLoaded", function() {
+    initInfiniteSlider('voosSlider');
+    initInfiniteSlider('nacionaisSlider');
+  });
+</script>
+
+
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
   </body>
