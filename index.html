@@ -201,16 +201,8 @@
          
       <!-- 1. VOOS INTERNACIONAIS -->
       <section class="container py-5">
-        <div class="d-flex align-items-center justify-content-between mb-4">
+        <div class="mb-4">
           <h3 class="fw-bold mb-0">Voos Internacionais</h3>
-          <div class="d-flex gap-2">
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('voosSlider', 'prev')">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('voosSlider', 'next')">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
         </div>
 
         <div class="carousel-container position-relative">
@@ -330,16 +322,8 @@
       
       <!-- 2. DESTINOS NACIONAIS (EM CARROSSEL) -->
       <section class="container py-5" id="destinos-nacionais">
-        <div class="d-flex align-items-center justify-content-between mb-4">
+        <div class="mb-4">
           <h3 class="fw-bold mb-0">Destinos Nacionais</h3>
-          <div class="d-flex gap-2">
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('nacionaisSlider', 'prev')">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('nacionaisSlider', 'next')">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
         </div>
 
         <div class="carousel-container position-relative">
@@ -447,16 +431,8 @@
 
       <!-- 3. RESERVAS DE HOTÉIS -->
       <section class="container py-5" id="hoteis-reservas">
-        <div class="d-flex align-items-center justify-content-between mb-4">
+        <div class="mb-4">
           <h3 class="fw-bold mb-0">Reservas de Hotéis</h3>
-          <div class="d-flex gap-2">
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('reservasHoteisSlider', 'prev')">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('reservasHoteisSlider', 'next')">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
         </div>
 
         <div class="carousel-container position-relative">
@@ -501,16 +477,8 @@
 
       <!-- 4. HOTÉIS EM DESTAQUE -->
       <section class="container py-5">
-        <div class="d-flex align-items-center justify-content-between mb-4">
+        <div class="mb-4">
           <h3 class="fw-bold mb-0">Hotéis em Destaque</h3>
-          <div class="d-flex gap-2">
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('hoteisDestaqueSlider', 'prev')">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('hoteisDestaqueSlider', 'next')">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
         </div>
 
         <div class="carousel-container position-relative">
@@ -556,16 +524,8 @@
       <!-- 5. NOSSOS DESTINOS MAIS PROCURADOS -->
       <section id="destination" class="py-5">
         <div class="container">
-          <div class="d-flex align-items-center justify-content-between mb-4">
+          <div class="mb-4">
             <h3 class="fw-bold mb-0">Nossos Destinos Mais Procurados</h3>
-            <div class="d-flex gap-2">
-              <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('destinosProcuradosSlider', 'prev')">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button class="btn btn-outline-primary rounded-circle p-2 d-flex align-items-center justify-content-center shadow-sm" style="width: 42px; height: 42px;" type="button" onclick="moveSlider('destinosProcuradosSlider', 'next')">
-                <i class="fas fa-chevron-right"></i>
-              </button>
-            </div>
           </div>
 
           <div class="carousel-container position-relative">
@@ -677,72 +637,65 @@
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
 
-    <!-- SCRIPT CORRIGIDO PARA OS BOTÕES E O AUTO-SCROLL -->
- <script>
-  function initInfiniteSlider(sliderId) {
-    const slider = document.getElementById(sliderId);
-    if (!slider) return;
-    
-    // Captura os cards originais antes de duplicar
-    const originalCards = Array.from(slider.children);
-    if (originalCards.length === 0) return;
+    <!-- SCRIPT DO CARROSSEL INFINITO -->
+    <script>
+      function initInfiniteSlider(sliderId) {
+        const slider = document.getElementById(sliderId);
+        if (!slider) return;
+        
+        const originalCards = Array.from(slider.children);
+        if (originalCards.length === 0) return;
 
-    // Clona os elementos via DOM (evita quebras de estrutura de texto)
-    originalCards.forEach(card => {
-      const clonedCard = card.cloneNode(true);
-      // Remove IDs dos elementos clonados para evitar conflitos na página
-      if (clonedCard.id) clonedCard.removeAttribute('id');
-      clonedCard.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
-      slider.appendChild(clonedCard);
-    });
-    
-    const allCards = slider.children;
-    let currentIndex = 0;
-    const totalOriginalCards = originalCards.length;
-    
-    slider.style.transition = 'transform 0.5s ease-in-out';
-    
-    function autoSlide() {
-      const cardWidth = allCards[0].offsetWidth;
-      const gap = 24; // Alinhe com o espaçamento gap-4 (24px) do seu CSS
-      const fullCardStep = cardWidth + gap;
-      
-      // Calcula quantos cards estão visíveis na tela
-      const containerWidth = slider.parentElement.offsetWidth;
-      const visibleCards = Math.max(1, Math.round(containerWidth / fullCardStep));
-      
-      // Avança o bloco inteiro de cards visíveis de uma vez só
-      currentIndex += visibleCards;
-      
-      slider.style.transition = 'transform 0.5s ease-in-out';
-      slider.style.transform = `translateX(-${currentIndex * fullCardStep}px)`;
-    }
-    
-    // Escuta o fim da animação para fazer o reset invisível de direita para esquerda
-    slider.addEventListener('transitionend', () => {
-      const cardWidth = allCards[0].offsetWidth;
-      const gap = 24;
-      const fullCardStep = cardWidth + gap;
-      
-      if (currentIndex >= totalOriginalCards) {
-        slider.style.transition = 'none';
-        currentIndex = currentIndex % totalOriginalCards;
-        slider.style.transform = `translateX(-${currentIndex * fullCardStep}px)`;
+        originalCards.forEach(card => {
+          const clonedCard = card.cloneNode(true);
+          if (clonedCard.id) clonedCard.removeAttribute('id');
+          clonedCard.querySelectorAll('[id]').forEach(el => el.removeAttribute('id'));
+          slider.appendChild(clonedCard);
+        });
+        
+        const allCards = slider.children;
+        let currentIndex = 0;
+        const totalOriginalCards = originalCards.length;
+        
+        slider.style.transition = 'transform 0.5s ease-in-out';
+        
+        function autoSlide() {
+          const cardWidth = allCards[0].offsetWidth;
+          const gap = 24; 
+          const fullCardStep = cardWidth + gap;
+          
+          const containerWidth = slider.parentElement.offsetWidth;
+          const visibleCards = Math.max(1, Math.round(containerWidth / fullCardStep));
+          
+          currentIndex += visibleCards;
+          
+          slider.style.transition = 'transform 0.5s ease-in-out';
+          slider.style.transform = `translateX(-${currentIndex * fullCardStep}px)`;
+        }
+        
+        slider.addEventListener('transitionend', () => {
+          const cardWidth = allCards[0].offsetWidth;
+          const gap = 24;
+          const fullCardStep = cardWidth + gap;
+          
+          if (currentIndex >= totalOriginalCards) {
+            slider.style.transition = 'none';
+            currentIndex = currentIndex % totalOriginalCards;
+            slider.style.transform = `translateX(-${currentIndex * fullCardStep}px)`;
+          }
+        });
+        
+        setInterval(autoSlide, 3500);
       }
-    });
-    
-    // Inicia o intervalo de rotação automática
-    setInterval(autoSlide, 3500);
-  }
 
-  // Inicializa os carrosséis da AeroClick
-  document.addEventListener("DOMContentLoaded", function() {
-    initInfiniteSlider('voosSlider');
-    initInfiniteSlider('nacionaisSlider');
-  });
-</script>
-
-
+      document.addEventListener("DOMContentLoaded", function() {
+        initInfiniteSlider('voosSlider');
+        initInfiniteSlider('nacionaisSlider');
+        initInfiniteSlider('reservasHoteisSlider');
+        initInfiniteSlider('hoteisDestaqueSlider');
+        initInfiniteSlider('destinosProcuradosSlider');
+      });
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
   </body>
