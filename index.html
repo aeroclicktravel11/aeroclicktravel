@@ -16,25 +16,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
     <title>AeroClick Travel | Assessoria de Vistos e Viagens</title>
 
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <!-- onertravel-widget-container  -->
+    <!-- onertravel-widget-container -->
     <link rel="stylesheet" href="https://static.onertravel.com/widget/search/production/styles.css">
 
     <!-- Meta Pixel Code -->
@@ -56,26 +47,6 @@
     <!-- End Meta Pixel Code -->
 
     <style>
-      /* Remove qualquer elemento decorativo de fundo dos cards de serviço */
-      #service .card::before,
-      #service .card::after,
-      #service .service-card::before,
-      #service .service-card::after {
-        display: none !important;
-        background: none !important;
-      }
-      #service .card,
-      #service .service-card {
-        background-color: #ffffff !important;
-        background: #ffffff !important;
-      }
-      #service .card-body {
-        background-color: #ffffff !important;
-        position: relative;
-        z-index: 2;
-      }
-
-      /* Ajustes de Responsividade para Dispositivos Móveis */
       @media (max-width: 991.98px) {
         .hero-header-section {
           padding-bottom: 3rem !important;
@@ -85,18 +56,58 @@
           padding: 15px !important;
         }
       }
-     /* Altera a cor do botão BUSCAR do widget para o azul do céu */
-  #wrapper button[type="submit"], 
-  #wrapper .search-button, 
-  #wrapper input[type="button"],
-  #wrapper .btn-search {
-    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%) !important;
-    background-color: #2193b0 !important;
-    color: #ffffff !important;
-    border: none !important;
-  }
+      #wrapper button[type="submit"], 
+      #wrapper .search-button, 
+      #wrapper input[type="button"],
+      #wrapper .btn-search {
+        background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%) !important;
+        background-color: #2193b0 !important;
+        color: #ffffff !important;
+        border: none !important;
+      }
 
-</style>
+      .btn-primary, .btn-outline-primary, .btn-outline-success, .btn-success {
+        background-color: #2193b0 !important;
+        border-color: #2193b0 !important;
+        color: #ffffff !important;
+      }
+      .btn-outline-primary, .btn-outline-success {
+        background-color: transparent !important;
+        color: #2193b0 !important;
+        border-color: #2193b0 !important;
+      }
+      .btn-outline-primary:hover, .btn-outline-success:hover {
+        background-color: #2193b0 !important;
+        color: #ffffff !important;
+      }
+
+      .bg-warning, .bg-danger, .bg-info, .badge {
+        background-color: #2193b0 !important;
+      }
+      .text-primary, .text-success {
+        color: #2193b0 !important;
+      }
+
+      section {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+      }
+      .hero-header-section {
+        padding-top: 20px !important;
+        padding-bottom: 4rem !important;
+      }
+
+      .carousel-container {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .card-slider {
+        display: flex;
+        gap: 24px;
+        transition: transform 0.6s ease-in-out;
+      }
+    </style>
 
   <script type="application/ld+json">
   {
@@ -130,64 +141,32 @@
         "@type": "AdministrativeArea",
         "name": "Paraná"
       }
-    ],
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Passagens Aéreas",
-          "description": "Emissão de passagens aéreas nacionais e internacionais com tarifas exclusivas e suporte completo."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Assessoria de Vistos Consulares",
-          "description": "Preenchimento do formulário DS-160, pagamento de taxas, agendamento de entrevistas e preparação para vistos."
-        }
-      }
     ]
   }
   </script>
-
   </head>
 
   <body>
 
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
     <main class="main" id="top">
 
-      <!-- ===============================================-->
-      <!-- HEADER / BLOCO AZUL DO CÉU E WIDGET MAIS ACIMA -->
-      <!-- ===============================================-->
-      <section class="hero-header-section" style="position: relative; background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%); padding-top: 20px; padding-bottom: 4rem;">
-        
+      <!-- HEADER / BLOCO AZUL DO CÉU E WIDGET -->
+      <section class="hero-header-section" style="position: relative; background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);">
         <div class="container">
           
-          <!-- BARRA SUPERIOR: Apenas Logo e Título centralizado (Sem botões e sem redes sociais) -->
-          <div class="row align-items-center py-2 mb-2">
-            
-            <!-- 1. Logo da AeroClick -->
+          <div class="row align-items-center py-2 mb-3">
             <div class="col-lg-4 col-md-4 col-6">
               <a class="navbar-brand" href="index.html">
                 <img src="assets/img/logo.svg" height="85" alt="AeroClick Travel" style="filter: brightness(0) invert(1);" />
               </a>
             </div>
-
-            <!-- 2. Título Central Compacto -->
             <div class="col-lg-8 col-md-8 col-6 text-end text-md-center">
               <h1 class="text-white fw-bold m-0" style="font-size: clamp(1.2rem, 2.2vw, 1.6rem); text-shadow: 0 2px 8px rgba(0,0,0,0.25);">
                 Passagens Aéreas, Hotéis e Viagens
               </h1>
             </div>
-
           </div>
 
-          <!-- WIDGET DA ONER TRAVEL MAIS ACIMA -->
           <div class="row justify-content-center mb-4">
             <div class="col-12">
               <div id="wrapper" style="background: #ffffff; border-radius: 14px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); padding: 25px; margin-top: 10px;">
@@ -196,13 +175,12 @@
             </div>
           </div>
 
-          <!-- MENU EM PÍLULA POSICIONADO LOGO ABAIXO DO WIDGET -->
           <div class="row align-items-center py-2">
             <div class="col-12 d-flex justify-content-center">
               <nav style="background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); border-radius: 50px; padding: 10px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); overflow-x: auto; max-width: 100%;">
                 <ul class="nav align-items-center gap-4 mb-0 flex-nowrap" style="white-space: nowrap;">
                   <li><a class="text-white text-decoration-none fw-medium" href="index.html">Início</a></li>
-                  <li><a class="text-white text-decoration-none fw-medium" href="#service">Serviços</a></li>
+                  <li><a class="text-white text-decoration-none fw-medium" href="servicos.html">Serviços</a></li>
                   <li><a class="text-white text-decoration-none fw-medium" href="hoteis.html">Reservas</a></li>
                   <li><a class="text-white text-decoration-none fw-medium" href="#destination">Destinos</a></li>
                   <li><a class="text-white text-decoration-none fw-medium" href="#booking">Como Funciona</a></li>
@@ -214,373 +192,55 @@
         </div>
       </section>
 
-      <!-- Script de funcionamento do buscador da Oner Travel -->
       <script type="text/javascript" src="https://static.onertravel.com/widget/search/production/widget-befly.js"></script>
            
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="pt-5 pt-md-9" id="service">
-
-        <div class="container">
-          <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="assets/img/category/shape.svg" style="max-width: 200px" alt="service" /></div>
-          <div class="mb-7 text-center">
-            <h5 class="text-secondary">O QUE FAZEMOS</h5>
-            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Nossos Principais Serviços</h3>
-          </div>
-          <div class="row">
+      <!-- 1. VOOS INTERNACIONAIS -->
+      <section class="container">
+        <h3 class="mb-4 fw-bold">Voos Internacionais</h3>
+        <div class="carousel-container">
+          <div class="card-slider" id="voosSlider">
             
-            <!-- 1. Assessoria de Vistos -->
-            <div class="col-lg-4 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
-                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
-                  <img src="assets/img/servicos/vistos.png" alt="Assessoria de Vistos" class="w-100 h-100" style="object-fit: cover;" />
-                </div>
-                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
-                  <h4 class="mb-3">Assessoria de Vistos</h4>
-                  <p class="mb-3 fw-medium">Cuidamos de toda a burocracia, formulários DS-160 e agendamentos consulares.</p>
-                  <a href="vistos.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Vistos</a>
-                </div>
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/lisboa.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Madri" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Madri | Espanha</h5>
+                <p class="text-muted small mb-3">Saindo de São Paulo</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/flight_list?departureDate=2026-11-04&returnDate=2026-11-11&isRoundTrip=true&adultCount=1&infantCount=0&childCount=0&departureAirport=SAO&arrivalAirport=MAD" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver passagens</a>
               </div>
             </div>
 
-            <!-- 2. Passagens Aéreas -->
-            <div class="col-lg-4 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
-                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
-                  <img src="assets/img/servicos/passagens.png" alt="Passagens Aéreas" class="w-100 h-100" style="object-fit: cover;" />
-                </div>
-                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
-                  <h4 class="mb-3">Passagens Aéreas</h4>
-                  <p class="mb-3 fw-medium">Acesso a tarifas exclusivas nas melhores companhias aéreas do mundo.</p>
-                  <a href="passagens.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Passagens</a>
-                </div>
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/newyork.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Nova York" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Nova York | Estados Unidos</h5>
+                <p class="text-muted small mb-3">Saindo de São Paulo</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/flight_list?departureDate=2026-11-04&returnDate=2026-11-11&isRoundTrip=true&adultCount=1&infantCount=0&childCount=0&departureAirport=SAO&arrivalAirport=JFK" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver passagens</a>
               </div>
             </div>
 
-            <!-- 3. Hotéis & Resorts -->
-            <div class="col-lg-4 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
-                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
-                  <img src="assets/img/servicos/hoteis.png" alt="Hotéis e Resorts" class="w-100 h-100" style="object-fit: cover;" />
-                </div>
-                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
-                  <h4 class="mb-3">Hotéis & Resorts</h4>
-                  <p class="mb-3 fw-medium">Hospedagem de alto padrão com tarifas imperdíveis no Brasil e exterior.</p>
-                  <a href="hoteis.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Hotéis</a>
-                </div>
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/cancun.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Cancún" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Cancún | México</h5>
+                <p class="text-muted small mb-3">Saindo de São Paulo</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/flight_list?departureDate=2026-11-04&returnDate=2026-11-11&isRoundTrip=true&adultCount=1&infantCount=0&childCount=0&departureAirport=SAO&arrivalAirport=CUN" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver passagens</a>
               </div>
             </div>
 
-            <!-- 4. Ingressos & Cruzeiros -->
-            <div class="col-lg-4 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
-                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
-                  <img src="assets/img/servicos/ingressos.png" alt="Ingressos e Cruzeiros" class="w-100 h-100" style="object-fit: cover;" />
-                </div>
-                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
-                  <h4 class="mb-3">Ingressos & Cruzeiros</h4>
-                  <p class="mb-3 fw-medium">Parques temáticos em Orlando e roteiros incríveis em alto-mar.</p>
-                  <a href="ingressos.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Ingressos</a>
-                </div>
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/newyork.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Miami" style="object-fit: cover;">
               </div>
-            </div>
-
-            <!-- 5. Seguro Viagem -->
-            <div class="col-lg-4 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
-                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
-                  <img src="assets/img/servicos/seguros.png" alt="Seguro Viagem" class="w-100 h-100" style="object-fit: cover;" />
-                </div>
-                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
-                  <h4 class="mb-3">Seguro Viagem</h4>
-                  <p class="mb-3 fw-medium">Assistência médica completa, bagagem e proteção global 24h para sua tranquilidade.</p>
-                  <a href="seguros.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Seguros</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- 6. Chip Internacional -->
-            <div class="col-lg-4 col-sm-6 mb-6">
-              <div class="card service-card shadow-hover rounded-3 overflow-hidden text-center align-items-center h-100 bg-white border-0" style="background-color: #ffffff !important;">
-                <div class="w-100" style="height: 180px; overflow: hidden; background-color: #ffffff;">
-                  <img src="assets/img/servicos/chip.png" alt="Chip Internacional" class="w-100 h-100" style="object-fit: cover;" />
-                </div>
-                <div class="card-body p-xxl-4 p-4 d-flex flex-column w-100"> 
-                  <h4 class="mb-3">Chip Internacional</h4>
-                  <p class="mb-3 fw-medium">Conectividade de alta velocidade com eSIM ou chip físico mantendo seu WhatsApp.</p>
-                  <a href="chip.html" class="btn btn-outline-primary btn-sm mt-auto">Ver Chips</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div><!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section id="booking">
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="mb-4 text-start">
-                <h5 class="text-secondary">Simples e Ágil</h5>
-                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Sua viagem dos sonhos em 3 passos</h3>
-              </div>
-              <div class="d-flex align-items-start mb-5">
-                <div class="bg-primary me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/selection.svg" width="22" alt="steps" /></div>
-                <div class="flex-1">
-                  <h5 class="text-secondary fw-bold fs-0">1. Defina o seu destino</h5>
-                  <p>Conte-nos seus planos. Seja para turismo, intercâmbio ou negócios, nós montamos o roteiro ideal para você.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-start mb-5">
-                <div class="bg-danger me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/water-sport.svg" width="22" alt="steps" /></div>
-                <div class="flex-1">
-                  <h5 class="text-secondary fw-bold fs-0">2. Deixe a burocracia com a gente</h5>
-                  <p>Preenchemos seus formulários, agendamos seu visto, emitimos as passagens e garantimos o melhor seguro-viagem.</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-start mb-5">
-                <div class="bg-info me-sm-4 me-3 p-3" style="border-radius: 13px"> <img src="assets/img/steps/taxi.svg" width="22" alt="steps" /></div>
-                <div class="flex-1">
-                  <h5 class="text-secondary fw-bold fs-0">3. Embarque com tranquilidade</h5>
-                  <p>Receba todos os seus documentos organizados. O seu único trabalho será fazer as malas e aproveitar.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-start">
-              <div class="card position-relative shadow" style="max-width: 370px;">
-                <div class="position-absolute z-index--1 me-10 me-xxl-0" style="right:-160px;top:-210px;"> <img src="assets/img/steps/bg.png" style="max-width:550px;" alt="shape" /></div>
-                <div class="card-body p-3"> <img class="mb-4 mt-2 rounded-2 w-100" src="assets/img/steps/booking-img.jpg" alt="booking" />
-                  <div>
-                    <h5 class="fw-medium">Férias em Orlando</h5>
-                    <p class="fs--1 mb-3 fw-medium">14-29 Dezembro | por AeroClick Travel</p>
-                    <div class="icon-group mb-4"> <span class="btn icon-item"> <img src="assets/img/steps/leaf.svg" alt=""/></span><span class="btn icon-item"> <img src="assets/img/steps/map.svg" alt=""/></span><span class="btn icon-item"> <img src="assets/img/steps/send.svg" alt=""/></span>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="d-flex align-items-center mt-n1"><img class="me-3" src="assets/img/steps/building.svg" width="18" alt="building" /><span class="fs--1 fw-medium">Pacote Família</span></div>
-                      <div class="show-onhover position-relative">
-                        <div class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3" style="width: 260px;border-radius:18px;">
-                          <div class="card-body py-3">
-                            <div class="d-flex">
-                              <div style="margin-right: 10px"> <img class="rounded-circle" src="assets/img/steps/favorite-placeholder.png" width="50" alt="favorite" /></div>
-                              <div>
-                                <p class="fs--1 mb-1 fw-medium">Status Atual</p>
-                                <h5 class="fw-medium mb-3">Visto Americano</h5>
-                                <h6 class="fs--1 fw-medium mb-2"><span>Formulário DS-160</span> Preenchido!</h6>
-                                <div class="progress" style="height: 6px;">
-                                  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="btn"> <img src="assets/img/steps/heart.svg" width="20" alt="step" /></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="pt-5" id="destination">
-
-        <div class="container">
-          <!-- <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img src="assets/img/dest/shape.svg" alt="destination" /></div> -->
-          
-          <div class="mb-7 text-center">
-            <h5 class="text-secondary">Vitrine de Viagens</h5>
-            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Nossos Destinos Mais Procurados</h3>
-          </div>
-
-          <!-- LINHA 1: DESTINOS INTERNACIONAIS -->
-          <h4 class="fw-bold mb-4 text-center text-md-start text-primary"> Destinos Internacionais</h4>
-          <div class="row mb-6">
-            
-            <!-- Nova York -->
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/newyork.png" alt="Nova York" />
-                <div class="card-body py-4 px-3 d-flex flex-column">
-                  <h4 class="text-secondary fw-bold mb-3">Nova York (EUA) 🇺🇸</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes completos com passagens aéreas saindo de Chapecó, hospedagem em hotéis centrais em Manhattan e ingressos para a Broadway.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Cuidamos de toda a burocracia e da emissão do seu Visto Americano.</p>
-                  <a class="btn btn-outline-primary mt-auto w-100 fw-medium" href="https://www.comprarviagem.com.br/aeroclicktravel/home" target="_blank">Solicitar Cotação</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Lisboa -->
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/lisboa.png" alt="Lisboa" />
-                <div class="card-body py-4 px-3 d-flex flex-column">
-                  <h4 class="text-secondary fw-bold mb-3">Lisboa (Portugal) 🇵🇹</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Voos com conexões ágeis, reservas em hotéis boutique e seguro-viagem internacional obrigatório.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Montamos roteiros sob medida para você explorar a cultura europeia.</p>
-                  <a class="btn btn-outline-primary mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Lisboa." target="_blank">Solicitar Cotação</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Cancún -->
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/cancun.png" alt="Cancún" />
-                <div class="card-body py-4 px-3 d-flex flex-column">
-                  <h4 class="text-secondary fw-bold mb-3">Cancún (México) 🇲🇽</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes em resorts All-Inclusive à beira-mar, passagens aéreas e traslados exclusivos.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Auxiliamos na verificação e trâmites de vistos necessários para a sua viagem.</p>
-                  <a class="btn btn-outline-primary mt-auto w-100 fw-medium" href="https://www.comprarviagem.com.br/aeroclicktravel/home" target="_blank">Solicitar Cotação</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- LINHA 2: DESTINOS NACIONAIS -->
-          <h4 class="fw-bold mb-4 text-center text-md-start text-success mt-4"> Destinos Nacionais</h4>
-          <div class="row">
-            
-            <!-- Balneário Camboriú -->
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/camboriu.png" alt="Balneário Camboriú" />
-                <div class="card-body py-4 px-3 d-flex flex-column">
-                  <h4 class="text-secondary fw-bold mb-3">Balneário Camboriú (SC)</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Reservas nos melhores hotéis e passaportes antecipados para o Beto Carrero World.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Suporte personalizado bem perto de você.</p>
-                  <a class="btn btn-outline-success mt-auto w-100 fw-medium" href="https://www.comprarviagem.com.br/aeroclicktravel/home" target="_blank">Falar com Consultor</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Rio de Janeiro -->
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/rio.png" alt="Rio de Janeiro" />
-                <div class="card-body py-4 px-3 d-flex flex-column">
-                  <h4 class="text-secondary fw-bold mb-3">Rio de Janeiro (RJ)</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Passagens aéreas, hospedagem segura na Zona Sul e combos de ingressos.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Monitoramento de voos em tempo real e atendimento rápido.</p>
-                  <a class="btn btn-outline-success mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20o%20Rio%20de%20Janeiro." target="_blank">Falar com Consultor</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Maceió -->
-            <div class="col-md-4 mb-4">
-              <div class="card overflow-hidden shadow h-100"> <img class="card-img-top" src="assets/img/dest/maceio.png" alt="Maceió" />
-                <div class="card-body py-4 px-3 d-flex flex-column">
-                  <h4 class="text-secondary fw-bold mb-3">Maceió (AL)</h4>
-                  <p class="fs--1 mb-2 text-dark"><strong>O que promovemos:</strong> Pacotes de sol e praia, resorts no Nordeste e passeios para piscinas naturais.</p>
-                  <p class="fs--1 mb-4 text-dark"><strong>Diferencial AeroClick:</strong> Negociação direta para garantir o melhor custo-benefício.</p>
-                  <a class="btn btn-outline-success mt-auto w-100 fw-medium" href="https://wa.me/5549999227869?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20para%20Macei%C3%B3." target="_blank">Falar com Consultor</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div><!-- end of .container-->
-
-      </section>
-      <!-- <section> close ============================-->
-      
-      <!-- SEÇÃO BANNER SEGURO VIAGEM EXplicativo -->
-      <section class="py-6 position-relative bg-light border-top border-bottom">
-        <div class="container">
-          <div class="row align-items-center g-5">
-            
-            <!-- Coluna de Informações e Benefícios -->
-            <div class="col-lg-7">
-              <span class="badge bg-success px-3 py-2 mb-3 shadow-sm">Proteção Obrigatória e Essencial</span>
-              <h2 class="fw-bold text-dark display-6 mb-3">Por que você precisa de um Seguro Viagem?</h2>
-              <p class="text-secondary mb-4" style="line-height: 1.7;">
-                Viajar protegido não é apenas uma garantia de tranquilidade para imprevistos médicos, farmacêuticos ou extravio de bagagem; em muitos destinos internacionais, a contratação de um seguro viagem é uma <strong>exigência legal obrigatória</strong> para a imigração.
-              </p>
-
-              <div class="row g-3 mb-4">
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-start">
-                    <div class="text-success fs-4 me-3"><i class="bi bi-check-circle-fill"></i></div>
-                    <div>
-                      <h6 class="fw-bold text-dark mb-1">Países da Europa (Schengen)</h6>
-                      <p class="fs--1 text-secondary mb-0">Exigem cobertura mínima obrigatória de € 30.000 para assistência médica.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-start">
-                    <div class="text-success fs-4 me-3"><i class="bi bi-check-circle-fill"></i></div>
-                    <div>
-                      <h6 class="fw-bold text-dark mb-1">Outros Destinos Exigentes</h6>
-                      <p class="fs--1 text-secondary mb-0">Países como Cuba, Venezuela e alguns vistos de intercâmbio também cobram o seguro.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-start">
-                    <div class="text-success fs-4 me-3"><i class="bi bi-shield-fill-check"></i></div>
-                    <div>
-                      <h6 class="fw-bold text-dark mb-1">Cobertura Global 24h</h6>
-                      <p class="fs--1 text-secondary mb-0">Atendimento médico em português, doenças preexistentes, gestantes e práticas esportivas.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6">
-                  <div class="d-flex align-items-start">
-                    <div class="text-success fs-4 me-3"><i class="bi bi-luggage"></i></div>
-                    <div>
-                      <h6 class="fw-bold text-dark mb-1">Bagagem & Voo</h6>
-                      <p class="fs--1 text-secondary mb-0">Suporte financeiro e indenização em caso de extravio ou atrasos prolongados.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex flex-wrap gap-3">
-                <a href="seguros.html" class="btn btn-outline-primary fw-bold px-4 py-2">Ver Detalhes dos Planos</a>
-                <a href="https://wa.me/5549999227869?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação%20rápida%20de%20seguro%20viagem%20para%20o%20meu%20destino." target="_blank" class="btn btn-success fw-bold px-4 py-2 shadow-sm">
-                  <i class="bi bi-whatsapp me-2"></i> Cotar no WhatsApp
-                </a>
-              </div>
-            </div>
-
-            <!-- Coluna do Card de Destaque Visual -->
-            <div class="col-lg-5">
-              <div class="card border-0 shadow-lg rounded-4 overflow-hidden bg-white p-4 p-md-5 text-center">
-                <div class="mb-3 text-success display-4">
-                  <i class="bi bi-file-earmark-medical-fill"></i>
-                </div>
-                <h3 class="fw-bold text-dark h4 mb-3">Emissão Rápida e Segura</h3>
-                <p class="text-secondary fs--1 mb-4">
-                  Receba sua apólice oficial direto no e-mail com validade internacional aceita por qualquer consulado ou imigração do mundo.
-                </p>
-                <div class="bg-light p-3 rounded-3 mb-4 text-start">
-                  <div class="d-flex justify-content-between fs--1 text-secondary mb-1">
-                    <span>Cobertura Europa (Schengen):</span>
-                    <strong class="text-dark">Disponível</strong>
-                  </div>
-                  <div class="d-flex justify-content-between fs--1 text-secondary mb-1">
-                    <span>Cobertura Estados Unidos/Mundo:</span>
-                    <strong class="text-dark">Disponível</strong>
-                  </div>
-                  <div class="d-flex justify-content-between fs--1 text-secondary">
-                    <span>Assistência em Português:</span>
-                    <strong class="text-success">24 horas</strong>
-                  </div>
-                </div>
-                <a href="https://wa.me/5549999227869?text=Olá!%20Preciso%20emitir%20um%20seguro%20viagem%20com%20urgência." target="_blank" class="btn btn-primary fw-bold w-100 py-3 shadow-sm">
-                  Garantir Meu Seguro Agora
-                </a>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Miami | Estados Unidos</h5>
+                <p class="text-muted small mb-3">Saindo de São Paulo</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/flight_list?departureDate=2026-11-04&returnDate=2026-11-11&isRoundTrip=true&adultCount=1&infantCount=0&childCount=0&departureAirport=SAO&arrivalAirport=MIA" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver passagens</a>
               </div>
             </div>
 
@@ -588,11 +248,185 @@
         </div>
       </section>
 
+      <!-- 2. DESTINOS NACIONAIS (EM CARROSSEL) -->
+      <section class="container" id="destinos-nacionais">
+        <h3 class="mb-4 fw-bold">Destinos Nacionais</h3>
+        <div class="carousel-container">
+          <div class="card-slider" id="nacionaisSlider">
+            
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/camboriu.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Balneário Camboriú" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Balneário Camboriú | SC</h5>
+                <p class="text-muted small mb-3">Hospedagem & Atrações</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/home" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Saiba mais</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/rio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Rio de Janeiro" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Rio de Janeiro | RJ</h5>
+                <p class="text-muted small mb-3">Zona Sul & Praias</p>
+                <a href="https://wa.me/5549999227869?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Rio%20de%20Janeiro." target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Saiba mais</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/maceio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Maceió" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Maceió | AL</h5>
+                <p class="text-muted small mb-3">Sol & Praias Paradisíacas</p>
+                <a href="https://wa.me/5549999227869?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Maceió." target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Saiba mais</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. RESERVAS DE HOTÉIS (EM CARROSSEL) -->
+      <section class="container" id="hoteis-reservas">
+        <h3 class="mb-4 fw-bold">Reservas de Hotéis</h3>
+        <div class="carousel-container">
+          <div class="card-slider" id="reservasHoteisSlider">
+            
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/maceio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Recife" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Recife | PE - Brasil</h5>
+                <p class="text-muted small mb-3">Tarifas em tempo real</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/hotel_list" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver hotéis</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/rio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="São Paulo" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">São Paulo | SP - Brasil</h5>
+                <p class="text-muted small mb-3">Tarifas em tempo real</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/hotel_list" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver hotéis</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/camboriu.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Porto Alegre" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Porto Alegre | RS - Brasil</h5>
+                <p class="text-muted small mb-3">Tarifas em tempo real</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/hotel_list" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver hotéis</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. HOTÉIS EM DESTAQUE (EM CARROSSEL) -->
+      <section class="container">
+        <h3 class="mb-4 fw-bold">Hotéis em Destaque</h3>
+        <div class="carousel-container">
+          <div class="card-slider" id="hoteisDestaqueSlider">
+            
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/maceio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Fortaleza" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Fortaleza | CE - Brasil</h5>
+                <p class="text-muted small mb-3">Resorts e Conforto</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/hotel_list" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver hotéis</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/rio.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Rio de Janeiro" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Rio de Janeiro | RJ</h5>
+                <p class="text-muted small mb-3">Luxo e Localização</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/hotel_list" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver hotéis</a>
+              </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+              <div style="height: 160px; overflow: hidden;">
+                <img src="assets/img/dest/camboriu.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Balneário Camboriú" style="object-fit: cover;">
+              </div>
+              <div class="card-body p-4">
+                <h5 class="fw-bold">Balneário Camboriú | SC</h5>
+                <p class="text-muted small mb-3">Frente para o Mar</p>
+                <a href="https://www.comprarviagem.com.br/aeroclicktravel/hotel_list" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Ver hotéis</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. NOSSOS DESTINOS MAIS PROCURADOS (EM CARROSSEL) -->
+      <section id="destination">
+        <div class="container">
+          <h3 class="mb-4 fw-bold">Nossos Destinos Mais Procurados</h3>
+          <div class="carousel-container">
+            <div class="card-slider" id="destinosProcuradosSlider">
+              
+              <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+                <div style="height: 160px; overflow: hidden;">
+                  <img src="assets/img/dest/newyork.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Nova York" style="object-fit: cover;">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold">Nova York | EUA 🇺🇸</h5>
+                  <p class="text-muted small mb-3">Pacotes & Visto Americano</p>
+                  <a href="https://www.comprarviagem.com.br/aeroclicktravel/home" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Saiba mais</a>
+                </div>
+              </div>
+
+              <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+                <div style="height: 160px; overflow: hidden;">
+                  <img src="assets/img/dest/lisboa.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Lisboa" style="object-fit: cover;">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold">Lisboa | Portugal 🇵🇹</h5>
+                  <p class="text-muted small mb-3">Roteiros Culturais</p>
+                  <a href="https://wa.me/5549999227869?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20Lisboa." target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Saiba mais</a>
+                </div>
+              </div>
+
+              <div class="card border-0 shadow-sm rounded-4 flex-shrink-0" style="width: 320px;">
+                <div style="height: 160px; overflow: hidden;">
+                  <img src="assets/img/dest/cancun.png" class="card-img-top rounded-top-4 w-100 h-100" alt="Cancún" style="object-fit: cover;">
+                </div>
+                <div class="card-body p-4">
+                  <h5 class="fw-bold">Cancún | México 🇲🇽</h5>
+                  <p class="text-muted small mb-3">Resorts All-Inclusive</p>
+                  <a href="https://www.comprarviagem.com.br/aeroclicktravel/home" target="_blank" class="btn btn-outline-primary w-100 fw-bold rounded-pill">Saiba mais</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- POPUP FLUTUANTE DE SEGURO VIAGEM -->
       <div id="seguroPopup" style="position: fixed; bottom: 25px; right: 25px; z-index: 9999; max-width: 280px; font-family: 'Poppins', sans-serif;">
-        <div style="position: relative; background-color: #8cc63f; border-radius: 16px; padding: 35px 20px 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 2px solid #ffffff; text-align: center;">
+        <div style="position: relative; background-color: #2193b0; border-radius: 16px; padding: 35px 20px 25px 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 2px solid #ffffff; text-align: center;">
           
-          <button onclick="document.getElementById('seguroPopup').style.display='none';" style="position: absolute; top: 10px; right: 10px; background: #6da527; color: white; border: none; border-radius: 50%; width: 26px; height: 26px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: 0.2s;" onmouseover="this.style.background='#55821c'" onmouseout="this.style.background='#6da527'">×</button>
+          <button onclick="document.getElementById('seguroPopup').style.display='none';" style="position: absolute; top: 10px; right: 10px; background: #1a748c; color: white; border: none; border-radius: 50%; width: 26px; height: 26px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: 0.2s;" onmouseover="this.style.background='#135667'" onmouseout="this.style.background='#1a748c'">×</button>
 
           <div style="position: absolute; top: -35px; left: 50%; transform: translateX(-50%); width: 75px; height: 75px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid #ffffff; overflow: hidden;">
             <img src="assets/img/favicons/AeroClickTravel.png" alt="AeroClick Seguros" style="width: 50px; height: 50px; object-fit: contain;" />
@@ -603,16 +437,14 @@
             Conheça o melhor seguro viagem do Brasil e viaje protegido.
           </p>
 
-          <a href="https://wa.me/5549999227869?text=Olá!%20Vi%20o%20banner%20no%20site%20e%20gostaria%20de%20contratar%20um%20seguro%20viagem." target="_blank" style="display: inline-block; background-color: #72a42b; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 10px 24px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.2s;" onmouseover="this.style.backgroundColor='#5e8822'" onmouseout="this.style.backgroundColor='#72a42b'">
+          <a href="https://wa.me/5549999227869?text=Olá!%20Vi%20o%20banner%20no%20site%20e%20gostaria%20de%20contratar%20um%20seguro%20viagem." target="_blank" style="display: inline-block; background-color: #ffffff; color: #2193b0; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 10px 24px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: 0.2s;" onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='#ffffff'">
             Contrate aqui
           </a>
 
         </div>
       </div>
 
-      <!-- ============================================-->
-      <!-- RODAPÉ (COM REDES SOCIAIS E BOTÃO FALE CONOSCO) -->
-      <!-- ============================================-->
+      <!-- RODAPÉ -->
       <section class="pb-4 pt-5 bg-light border-top">
         <div class="container">
           <div class="row align-items-center justify-content-between">
@@ -624,10 +456,10 @@
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center">
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 fs-1">Redes Sociais & Contato</h4>
               <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
-                <a class="text-decoration-none icon-item shadow-sm p-3 bg-white rounded-circle text-primary fs-5" href="https://www.facebook.com/share/14k6wHnBBuP/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="text-decoration-none icon-item shadow-sm p-3 bg-white rounded-circle text-primary fs-5" href="https://www.instagram.com/aeroclicktravel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="text-decoration-none icon-item shadow-sm p-3 bg-white rounded-circle fs-5" style="color: #2193b0;" href="https://www.facebook.com/share/14k6wHnBBuP/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="text-decoration-none icon-item shadow-sm p-3 bg-white rounded-circle fs-5" style="color: #2193b0;" href="https://www.instagram.com/aeroclicktravel/" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
-              <a href="https://wa.me/5549999227869" target="_blank" class="btn btn-success rounded-pill px-4 fw-bold shadow-sm">
+              <a href="https://wa.me/5549999227869" target="_blank" class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">
                 <i class="bi bi-whatsapp me-2"></i> Fale Conosco no WhatsApp
               </a>
             </div>
@@ -650,21 +482,41 @@
       </div>
 
     </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
 
-
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
 
+    <script>
+      function initSlider(sliderId) {
+        const slider = document.getElementById(sliderId);
+        if (!slider) return;
+        
+        const cards = slider.children;
+        let currentIndex = 0;
+        const cardWidth = cards[0].offsetWidth + 24;
+        
+        function autoSlide() {
+          currentIndex++;
+          if (currentIndex > cards.length - 2) {
+            currentIndex = 0;
+          }
+          slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+        setInterval(autoSlide, 5000);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        initSlider("voosSlider");
+        initSlider("nacionaisSlider");
+        initSlider("reservasHoteisSlider");
+        initSlider("hoteisDestaqueSlider");
+        initSlider("destinosProcuradosSlider");
+      });
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
   </body>
-
 </html>
