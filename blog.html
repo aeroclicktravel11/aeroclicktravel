@@ -8,6 +8,50 @@
 
     <title>Blog e Dicas de Viagem | AeroClick Travel</title>
 
+    <!-- ESTRUTURAÇÃO DE DADOS GEO E BLOG - TODO O BRASIL (SEO PARA IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://aeroclicktravel.com.br/#agency",
+          "name": "AeroClick Travel",
+          "url": "https://aeroclicktravel.com.br",
+          "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+          "telephone": "+55-49-99922-7869",
+          "email": "contato@aeroclicktravel.com.br",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chapecó",
+            "addressRegion": "SC",
+            "addressCountry": "BR"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://aeroclicktravel.com.br/blog.html#blog",
+          "url": "https://aeroclicktravel.com.br/blog.html",
+          "name": "Blog AeroClick Travel - Dicas de Viagem e Roteiros",
+          "description": "Artigos, dicas de passagens aéreas, parques temáticos e cruzeiros para viajantes em todo o Brasil.",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aeroclicktravel.com.br/#website",
+          "url": "https://aeroclicktravel.com.br",
+          "name": "AeroClick Travel",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
@@ -50,7 +94,6 @@
             <!-- Artigo 1: Passagens -->
             <div class="col-md-4 mb-4">
               <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
-                <!-- Você pode colocar uma imagem genérica de avião aqui -->
                 <div style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
                   <i class="fas fa-plane text-secondary fa-3x"></i>
                 </div>
@@ -97,10 +140,10 @@
         </div>
       </section>
 
-      <!-- RODAPÉ (Lembre-se de atualizar o link do Blog nele também) -->
+      <!-- RODAPÉ -->
       <div class="py-5 text-center bg-white border-top">
         <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
-        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: [SEU CNPJ] | CADASTUR: [SEU CADASTUR] | contato@aeroclicktravel.com.br</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | CADASTUR: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
       </div>
 
     </main>

@@ -5,7 +5,63 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguro Viagem Nacional e Internacional | AeroClick Travel</title>
+    <title>Seguro Viagem Nacional e Internacional Com Preço | AeroClick Travel</title>
+
+    <!-- ESTRUTURAÇÃO DE DADOS GEO E OFERTAS - TODO O BRASIL (SEO PARA IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://aeroclicktravel.com.br/#agency",
+          "name": "AeroClick Travel",
+          "url": "https://aeroclicktravel.com.br",
+          "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+          "telephone": "+55-49-99922-7869",
+          "email": "contato@aeroclicktravel.com.br",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chapecó",
+            "addressRegion": "SC",
+            "addressCountry": "BR"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://aeroclicktravel.com.br/#insurance",
+          "name": "Seguro Viagem Nacional e Internacional para todo o Brasil",
+          "description": "Cotação e contratação dos melhores seguros de viagem para passageiros em todo o Brasil. Cobertura médica, hospitalar, extravio de bagagem e assistência 24h.",
+          "provider": { "@id": "https://aeroclicktravel.com.br/#agency" },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "BRL",
+            "lowPrice": "50.00",
+            "highPrice": "1500.00",
+            "offerCount": "50",
+            "availability": "https://schema.org/InStock",
+            "url": "https://wa.me/5549999227869"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aeroclicktravel.com.br/#website",
+          "url": "https://aeroclicktravel.com.br",
+          "name": "AeroClick Travel",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+        }
+      ]
+    }
+    </script>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
@@ -80,7 +136,7 @@
                 <p class="text-secondary fs--1 mb-4" style="line-height: 1.6;">
                   Cobertura integral para despesas médicas, hospitalares e farmacêuticas em casos de urgência ou emergência, 24 horas por dia, 7 dias por semana, com atendimento na sua língua.
                 </p>
-                <a href="https://wa.me/5549999227869?text=Olá! Gostaria de cotar um seguro viagem com assistência médica." target="_blank" class="mt-auto btn btn-outline-success fw-bold btn-sm">
+                <a href="https://aeroclicktravel.com.br/" target="_blank">
                   Cotar Plano Médico
                 </a>
               </div>
@@ -93,7 +149,7 @@
                 <p class="text-secondary fs--1 mb-4" style="line-height: 1.6;">
                   Planos especiais que cobrem agudizações de doenças preexistentes e acompanhamento de gestantes até a 32ª semana de gestação com total segurança clínica.
                 </p>
-                <a href="https://wa.me/5549999227869?text=Olá! Gostaria de saber mais sobre seguro para gestantes e doenças preexistentes." target="_blank" class="mt-auto btn btn-outline-primary fw-bold btn-sm">
+                <a href="https://aeroclicktravel.com.br/" target="_blank" class="mt-auto btn btn-outline-primary fw-bold btn-sm">
                   Saber Mais
                 </a>
               </div>
@@ -106,7 +162,7 @@
                 <p class="text-secondary fs--1 mb-4" style="line-height: 1.6;">
                   Indenização e suporte em caso de extravio definitivo de bagagem, além de coberturas para despesas essenciais geradas por atrasos prolongados de voos.
                 </p>
-                <a href="https://wa.me/5549999227869?text=Olá! Quero cotar um seguro viagem com cobertura de bagagem." target="_blank" class="mt-auto btn btn-outline-warning text-dark fw-bold btn-sm">
+                <a href="https://aeroclicktravel.com.br" target="_blank" class="mt-auto btn btn-outline-warning text-dark fw-bold btn-sm">
                   Proteger Minha Bagagem
                 </a>
               </div>
@@ -172,13 +228,13 @@
             </div>
           </div>
 
-          <!-- BANNER DE CHAMADA PARA AÇÃO (WHATSAPP) -->
+          <!-- BANNER DE CHAMADA PARA AÇÃO (site) -->
           <div class="bg-primary text-white p-5 rounded-4 text-center shadow-sm">
             <h2 class="fw-bold text-white mb-3">Pronto para viajar sem preocupações?</h2>
             <p class="mb-4 mx-auto" style="max-width: 600px; opacity: 0.9;">
               Fale agora mesmo com um de nossos consultores especializados pelo WhatsApp e encontre o plano perfeito para o seu destino e orçamento!
             </p>
-            <a href="https://wa.me/5549999227869?text=Olá! Gostaria de fazer uma cotação de seguro viagem com a AeroClick Travel." target="_blank" class="btn btn-success btn-lg fw-bold px-5 shadow">
+            <a href="https://aeroclicktravel.com.br/">
               <i class="bi bi-whatsapp me-2"></i> Chamar no WhatsApp
             </a>
           </div>

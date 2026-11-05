@@ -7,6 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chip de Dados Internacional | AeroClick Travel</title>
 
+    <!-- ESTRUTURAÇÃO DE DADOS GEO E OFERTAS - TODO O BRASIL (SEO PARA IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://aeroclicktravel.com.br/#agency",
+          "name": "AeroClick Travel",
+          "url": "https://aeroclicktravel.com.br",
+          "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+          "telephone": "+55-49-99922-7869",
+          "email": "contato@aeroclicktravel.com.br",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chapecó",
+            "addressRegion": "SC",
+            "addressCountry": "BR"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://aeroclicktravel.com.br/#simcards",
+          "name": "Chips de Dados e eSIM Internacionais para todo o Brasil",
+          "description": "Venda de chips físicos e eSIMs de internet internacional (Planos Américas, Europa e Mundo) para clientes em todo o Brasil, garantindo conexão móvel e manutenção do WhatsApp no exterior.",
+          "provider": { "@id": "https://aeroclicktravel.com.br/#agency" },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "BRL",
+            "lowPrice": "150.00",
+            "highPrice": "500.00",
+            "offerCount": "30",
+            "availability": "https://schema.org/InStock",
+            "url": "https://aeroclicktravel.minhaviagem.com.br/atracoes/brasil-roaming.html"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aeroclicktravel.com.br/#website",
+          "url": "https://aeroclicktravel.com.br",
+          "name": "AeroClick Travel",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+        }
+      ]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
     <meta name="theme-color" content="#ffffff">

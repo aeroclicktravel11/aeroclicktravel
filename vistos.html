@@ -11,48 +11,48 @@
     <link href="assets/css/theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <!-- ESTRUTURAÇÃO DE DADOS GEO (SEO PARA IA) -->
+    <!-- ESTRUTURAÇÃO DE DADOS GEO E OFERTAS - TODO O BRASIL (SEO PARA IA) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "TravelAgency",
-          "@id": "https://aeroclicktravel.com.br",
+          "@id": "https://aeroclicktravel.com.br/#agency",
           "name": "AeroClick Travel",
           "url": "https://aeroclicktravel.com.br",
-          "logo": "https://aeroclicktravel.com.br",
+          "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
           "telephone": "+55-49-99922-7869",
+          "email": "contato@aeroclicktravel.com.br",
+          "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Chapecó",
             "addressRegion": "SC",
             "addressCountry": "BR"
           },
-          "areaServed": [
-            { "@type": "AdministrativeArea", "name": "Santa Catarina" },
-            { "@type": "AdministrativeArea", "name": "Rio Grande do Sul" },
-            { "@type": "AdministrativeArea", "name": "Paraná" }
-          ]
-        },
-        {
-          "@type": "GovernmentService",
-          "name": "Assessoria de Visto Americano (B1/B2)",
-          "description": "Assessoria consular completa para emissão de Visto Americano de Turismo e Negócios. Inclui preenchimento do formulário DS-160, agendamento no CASV/Consulado e preparação para entrevista.",
-          "provider": { "@id": "https://aeroclicktravel.com.br" },
-          "serviceOperator": { "@type": "GovernmentOrganization", "name": "Embaixada e Consulados dos EUA no Brasil" }
-        },
-        {
-          "@type": "GovernmentService",
-          "name": "Solicitação de eVisa para o Brasil",
-          "description": "Suporte e intermediação para a emissão de Visto Eletrônico Brasileiro (eVisa) para cidadãos estrangeiros qualificados.",
-          "provider": { "@id": "https://aeroclicktravel.com.br" },
-          "offers": {
-            "@type": "Offer",
-            "price": "80.90",
-            "priceCurrency": "USD",
-            "description": "Taxa consular oficial do eVisa de turismo com validade de 5 anos."
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
           }
+        },
+        {
+          "@type": "GovernmentService",
+          "@id": "https://aeroclicktravel.com.br/#visas",
+          "name": "Assessoria Completa de Vistos para todo o Brasil",
+          "description": "Assessoria consular completa para emissão de Visto Americano (B1/B2), preenchimento do formulário DS-160, agendamento no CASV e Consulado, além de suporte para documentação e eVisas para clientes em todo o Brasil.",
+          "provider": { "@id": "https://aeroclicktravel.com.br/#agency" },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aeroclicktravel.com.br/#website",
+          "url": "https://aeroclicktravel.com.br",
+          "name": "AeroClick Travel",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
         }
       ]
     }
@@ -87,7 +87,7 @@
               <span class="badge bg-primary px-3 py-2 mb-2 shadow-sm">Especialistas Consulares</span>
               <h1 class="fw-bold text-dark display-5">Assessoria Completa para Vistos</h1>
               <p class="text-secondary mt-2 mx-auto" style="max-width: 650px;">
-                Descomplicamos todo o processo burocrático de preenchimento, taxas e agendamento para maximizar suas chances de aprovação do Visto Americano e outros destinos a partir da região Sul.
+                Descomplicamos todo o processo burocrático de preenchimento, taxas e agendamento para maximizar suas chances de aprovação do Visto Americano e outros destinos com atendimento para todo o Brasil.
               </p>
             </div>
 
@@ -108,7 +108,7 @@
                 <!-- Outros Vistos -->
                 <div class="col-md-6">
                   <div class="card h-100 shadow-sm border-0 p-4 rounded-4 bg-white d-flex flex-column">
-                    <h3 class="h4 fw-bold text-primary mb-3"> Outros Vistos e Documentações</h3>
+                    <h3 class="h4 fw-bold text-primary mb-3">🌐 Outros Vistos e Documentações</h3>
                     <p class="text-secondary mb-4">
                       Orientação profissional para entrada em países com exigências específicas de vistos, autorizações de viagem e validação de passaportes para evitar transtornos no embarque.
                     </p>
@@ -164,3 +164,23 @@
 
                 <div class="text-center mt-4">
                   <a href="https://brazil.vfsevisa.com/" target="_blank" class="btn btn-success fw-bold">Acessar Portal Oficial do eVisa</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RODAPÉ -->
+      <div class="py-4 text-center bg-white border-top">
+        <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-1">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
+      </div>
+
+    </main>
+
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  </body>
+</html>

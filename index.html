@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>AeroClick Travel | Passagens Aéreas, Hotéis e Viagens com Melhor Preço| Agência de Viagens |
+    <title>AeroClick Travel | Passagens Aéreas, Hotéis e Viagens com Melhor Preço | Agência de Viagens |
  |Seguro de Viagem</title>
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
@@ -150,7 +150,64 @@
     ]
   }
   </script>
-  </head>
+
+  <!-- ESTRUTURAÇÃO DE DADOS GEO E OFERTAS - TODO O BRASIL (SEO PARA IA) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://aeroclicktravel.com.br/#agency",
+      "name": "AeroClick Travel",
+      "url": "https://aeroclicktravel.com.br",
+      "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+      "telephone": "+55-49-99922-7869",
+      "email": "contato@aeroclicktravel.com.br",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chapecó",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aeroclicktravel.com.br/#flights",
+      "name": "Emissão de Passagens Aéreas Nacionais e Internacionais Econômicas para todo o Brasil",
+      "description": "Busca em tempo real e emissão de passagens aéreas baratas para voos nacionais e internacionais saindo de qualquer aeroporto do Brasil, com suporte completo e tarifas promocionais.",
+      "provider": { "@id": "https://aeroclicktravel.com.br/#agency" },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "BRL",
+        "lowPrice": "250.00",
+        "highPrice": "5000.00",
+        "offerCount": "150",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.comprarviagem.com.br/aeroclicktravel/home"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aeroclicktravel.com.br/#website",
+      "url": "https://aeroclicktravel.com.br",
+      "name": "AeroClick Travel",
+      "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+    }
+  ]
+}
+</script>
+
+   </head>
 
   <body>
 
@@ -616,6 +673,8 @@
               <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">A Agência</h4>
               <ul class="list-unstyled mb-0">
                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="sobre.html">Sobre nós</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html">Blog</a></li>
+
                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="https://wa.me/5549999227869" target="_blank">Carreiras</a></li>
               </ul>
             </div>

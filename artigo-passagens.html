@@ -1,0 +1,200 @@
+import os
+
+# Create artigo-passagens.html
+passagens_html = """<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Qual a melhor antecedência para comprar passagens internacionais? | Blog AeroClick Travel</title>
+
+    <!-- ESTRUTURAÇÃO DE DADOS GEO E ARTIGO - TODO O BRASIL (SEO PARA IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://aeroclicktravel.com.br/#agency",
+          "name": "AeroClick Travel",
+          "url": "https://aeroclicktravel.com.br",
+          "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+          "telephone": "+55-49-99922-7869",
+          "email": "contato@aeroclicktravel.com.br",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chapecó",
+            "addressRegion": "SC",
+            "addressCountry": "BR"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://aeroclicktravel.com.br/artigo-passagens.html#article",
+          "headline": "Qual a melhor antecedência para comprar passagens internacionais?",
+          "description": "Entenda a janela ideal de compra e como os algoritmos das companhias aéreas precificam os voos para os EUA e Europa.",
+          "author": {
+            "@type": "Organization",
+            "name": "AeroClick Travel"
+          },
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" },
+          "mainEntityOfPage": "https://aeroclicktravel.com.br/artigo-passagens.html"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aeroclicktravel.com.br/#website",
+          "url": "https://aeroclicktravel.com.br",
+          "name": "AeroClick Travel",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/AeroClickTravel.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+      .article-hero {
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+        background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+      }
+      .article-content {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        color: #495057;
+      }
+      .article-content h3 {
+        color: #2193b0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .article-content ul {
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main" id="top">
+      
+      <!-- MENU SUPERIOR -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-white shadow-sm" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo.svg" height="85" alt="AeroClick Travel" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="index.html">Início</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="blog.html">Blog</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="servicos.html">Serviços</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO DO ARTIGO -->
+      <section class="article-hero text-white text-center">
+        <div class="container">
+          <span class="badge bg-white text-primary px-3 py-2 mb-3 fw-bold rounded-pill shadow-sm">Passagens Aéreas</span>
+          <h1 class="fw-bold display-5 mb-3" style="max-width: 800px; margin: 0 auto;">Qual a melhor antecedência para comprar passagens internacionais?</h1>
+          <p class="opacity-85 fs-1 mb-0">Entenda a janela ideal de compra e como os algoritmos das companhias aéreas precificam os voos para os EUA e Europa.</p>
+        </div>
+      </section>
+
+      <!-- CONTEÚDO DO ARTIGO -->
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 article-content">
+              
+              <p class="lead fw-semibold text-dark mb-4">
+                Planejar uma viagem internacional para destinos como Estados Unidos, Europa ou América Latina exige estratégia, especialmente quando o assunto é garantir passagens aéreas com o melhor custo-benefício. Afinal, comprar muito cedo ou em cima da hora pode custar caro.
+              </p>
+
+              <p>
+                As companhias aéreas utilizam algoritmos complexos de gestão de receita (yield management) que ajustam os preços dinamicamente com base na demanda histórica, sazonalidade, concorrência e antecedência da reserva. Conhecer essa dinâmica é o segredo para economizar.
+              </p>
+
+              <h3>A janela ideal de antecedência</h3>
+              <p>
+                Para voos internacionais com saída do Brasil, os estudos de mercado e o comportamento dos preços mostram que a <strong>janela de ouro</strong> para a compra costuma ficar entre <strong>3 a 6 meses de antecedência</strong> (aproximadamente 90 a 180 dias).
+              </p>
+              <ul>
+                <li><strong>Mais de 6 meses antes:</strong> As companhias ainda não lançaram suas tarifas promocionais agressivas e os assentos são comercializados nas classes tarifárias mais altas.</li>
+                <li><strong>Entre 3 e 6 meses antes:</strong> É o período em que a maioria das companhias aéreas realiza feirões de passagens e ajustes competitivos, oferecendo os melhores preços médios.</li>
+                <li><strong>Menos de 30 dias para o voo:</strong> Os preços disparam vertiginosamente. Essa faixa é dominada por viajantes corporativos ou de última hora, que possuem alta elasticidade de preço, permitindo que as aéreas cobrem tarifas elevadíssimas.</li>
+              </ul>
+
+              <h3>Fatores sazonais que você deve considerar</h3>
+              <p>
+                A antecedência ideal também varia conforme a época do ano em que você pretende viajar:
+              </p>
+              <ul>
+                <li><strong>Alta Temporada (Julho, Dezembro, Janeiro e feriados prolongados):</strong> A procura é massiva. Para esses períodos, o ideal é antecipar a compra para <strong>6 a 8 meses antes</strong>, garantindo não só um preço melhor, mas também os melhores horários e conexões.</li>
+                <li><strong>Baixa Temporada (Março a Maio, Agosto a Outubro):</strong> A janela de <strong>3 a 4 meses</strong> costuma ser suficiente para encontrar ótimas promoções relâmpago.</li>
+              </ul>
+
+              <h3>Dicas práticas da AeroClick Travel para economizar</h3>
+              <p>
+                Além de respeitar a antecedência ideal, algumas atitudes simples potencializam a sua economia:
+              </p>
+              <ul>
+                <li>Seja flexível com as datas (voar às terças e quartas-feiras costuma ser mais barato do que às sextas e domingos).</li>
+                <li>Monitore os preços utilizando ferramentas de alerta ou consulte diretamente os nossos especialistas no WhatsApp para cotações em tempo real.</li>
+                <li>Considere aeroportos alternativos de conexão ou chegada.</li>
+              </ul>
+
+              <div class="bg-light p-4 rounded-4 my-5 border-start border-4 border-primary shadow-sm">
+                <h4 class="fw-bold text-dark mb-2">Precisa de ajuda para encontrar a passagem perfeita?</h4>
+                <p class="text-secondary mb-3 fs--1">Nossa equipe monitora tarifas diariamente para clientes em todo o Brasil. Fale conosco agora mesmo!</p>
+                <a href="https://wa.me/5549999227869?text=Olá!%20Li%20o%20artigo%20sobre%20passagens%20e%20gostaria%20de%20fazer%20uma%20cotação." target="_blank" class="btn btn-primary rounded-pill fw-bold px-4">
+                  <i class="bi bi-whatsapp me-2"></i> Cotar Passagens no WhatsApp
+                </a>
+              </div>
+
+              <div class="text-center mt-4">
+                <a href="blog.html" class="btn btn-outline-primary rounded-pill px-4 fw-bold">← Voltar para o Blog</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RODAPÉ -->
+      <div class="py-5 text-center bg-white border-top">
+        <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
+      </div>
+
+    </main>
+
+    <!-- JavaScript Base -->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+  </body>
+</html>

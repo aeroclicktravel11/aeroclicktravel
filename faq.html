@@ -1,4 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ajuda e FAQ | AeroClick Travel</title>
+
+<!-- ESTRUTURAÇÃO DE DADOS GEO E OFERTAS - TODO O BRASIL (SEO PARA IA) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://aeroclicktravel.com.br/#agency",
+      "name": "AeroClick Travel",
+      "url": "https://aeroclicktravel.com.br",
+      "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+      "telephone": "+55-49-99922-7869",
+      "email": "contato@aeroclicktravel.com.br",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chapecó",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://aeroclicktravel.com.br/faq.html#faq",
+      "url": "https://aeroclicktravel.com.br/faq.html",
+      "name": "Central de Atendimento e Perguntas Frequentes - AeroClick Travel",
+      "description": "Tire suas dúvidas sobre reservas de hotéis, passagens aéreas baratas, ingressos, cruzeiros, assessoria de vistos consulares e seguros de viagem para clientes em todo o Brasil.",
+      "provider": { "@id": "https://aeroclicktravel.com.br/#agency" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aeroclicktravel.com.br/#website",
+      "url": "https://aeroclicktravel.com.br",
+      "name": "AeroClick Travel",
+      "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+    }
+  ]
+}
+</script>
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
@@ -65,7 +115,9 @@
     border-color: #0d6efd !important;
   }
 </style>
+</head>
 
+<body class="main" id="top">
 
   <!-- MENU SUPERIOR -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bg-white shadow-sm" data-navbar-on-scroll="data-navbar-on-scroll">
@@ -275,7 +327,7 @@
                   </h2>
                   <div id="collapseC1" class="accordion-collapse collapse" aria-labelledby="headingC1" data-bs-parent="#accordionFAQ">
                     <div class="accordion-body text-secondary fw-medium py-3">
-                      O valor padrão inclui a sua acomodação na cabine escolhida, transporte marítimo entre os portos do itinerário, entretenimento noturno a bordo (shows e teatros) e alimentação completa nas principais instalações e buffets do navio. Bebidas alcoólicas, restaurantes de especialidades e excursões terrestres são cobrados à parte.
+                      O valor padrão inclui a sua acomodação na cabine escolhida, transporte marítimo entre os portos do itinerário, entretenimento noturno a bordo (shows e teatros) e alimentação completa nas pelas principais instalações e buffets do navio. Bebidas alcoólicas, restaurantes de especialidades e excursões terrestres são cobrados à parte.
                     </div>
                   </div>
                 </div>
@@ -694,3 +746,5 @@
     });
   }
 </script>
+</body>
+</html>

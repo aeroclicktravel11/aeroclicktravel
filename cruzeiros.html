@@ -4,6 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruzeiros Marítimos - AeroClick Travel</title>
+
+    <!-- ESTRUTURAÇÃO DE DADOS GEO E OFERTAS - TODO O BRASIL (SEO PARA IA) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TravelAgency",
+          "@id": "https://aeroclicktravel.com.br/#agency",
+          "name": "AeroClick Travel",
+          "url": "https://aeroclicktravel.com.br",
+          "logo": "https://aeroclicktravel.com.br/assets/img/favicons/AeroClickTravel.png",
+          "telephone": "+55-49-99922-7869",
+          "email": "contato@aeroclicktravel.com.br",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chapecó",
+            "addressRegion": "SC",
+            "addressCountry": "BR"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://aeroclicktravel.com.br/#cruises",
+          "name": "Reservas de Cruzeiros Marítimos Nacionais e Internacionais para todo o Brasil",
+          "description": "Cotação e reservas de cruzeiros marítimos na costa brasileira, América do Sul, Caribe, Bahamas e Mediterrâneo para clientes em todo o Brasil, com tarifas exclusivas.",
+          "provider": { "@id": "https://aeroclicktravel.com.br/#agency" },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Brasil"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "BRL",
+            "lowPrice": "1200.00",
+            "highPrice": "15000.00",
+            "offerCount": "80",
+            "availability": "https://schema.org/InStock",
+            "url": "https://aeroclicktravel.minhaviagem.com.br"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aeroclicktravel.com.br/#website",
+          "url": "https://aeroclicktravel.com.br",
+          "name": "AeroClick Travel",
+          "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
+        }
+      ]
+    }
+    </script>
+
     <!-- Importando o Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
