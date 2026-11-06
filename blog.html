@@ -38,7 +38,7 @@
           "@id": "https://aeroclicktravel.com.br/blog.html#blog",
           "url": "https://aeroclicktravel.com.br/blog.html",
           "name": "Blog AeroClick Travel - Dicas de Viagem e Roteiros",
-          "description": "Artigos, dicas de passagens aéreas, parques temáticos e cruzeiros para viajantes em todo o Brasil.",
+          "description": "Artigos, dicas de passagens aéreas, parques temáticos, cruzeiros e seguros para viajantes em todo o Brasil.",
           "publisher": { "@id": "https://aeroclicktravel.com.br/#agency" }
         },
         {
@@ -61,21 +61,29 @@
 
     <!-- Stylesheets -->
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+      /* Estilo opcional para controlar o tamanho exato da fonte dos títulos dos artigos */
+      .blog-card-title {
+        font-size: 1.1rem !important;
+        line-height: 1.5;
+      }
+    </style>
   </head>
 
   <body>
     <main class="main" id="top">
       
       <!-- MENU SUPERIOR -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="130" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-4 bg-white shadow-sm" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/logo.svg" height="85" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#service">Serviços</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#destination">Destinos</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="index.html#booking">Como Funciona</a></li>
-              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="https://wa.me/5549999227869" target="_blank">Fale Conosco</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="index.html">Início</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="blog.html">Blog</a></li>
+              <li class="nav-item px-3"><a class="nav-link fw-medium" href="https://aeroclicktravel.com.br/" target="_blank">Fale Conosco</a></li>
             </ul>
           </div>
         </div>
@@ -86,52 +94,83 @@
         <div class="container">
           <div class="text-center mb-6">
             <h5 class="text-secondary">Dicas, Roteiros e Informações</h5>
-            <h2 class="fs-xl-8 fs-lg-6 fs-5 fw-bold font-cursive text-capitalize text-primary">Blog AeroClick</h2>
+            <h2 class="fs-xl-8 fs-lg-6 fs-5 fw-bold font-cursive text-capitalize text-primary">Blog AeroClick Travel</h2>
+            <p class="text-secondary mt-2">Explore os nossos artigos e planeje a sua próxima viagem com total segurança e suporte especializado em todo o Brasil.</p>
           </div>
 
-          <div class="row">
+          <div class="row g-4">
             
             <!-- Artigo 1: Passagens -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-3">
               <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
-                <div style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
-                  <i class="fas fa-plane text-secondary fa-3x"></i>
+                <div style="height: 160px; background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%); display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-airplane text-white fs-1"></i>
                 </div>
                 <div class="card-body p-4 d-flex flex-column">
                   <span class="badge bg-primary mb-2" style="width: fit-content;">Passagens Aéreas</span>
-                  <h4 class="fw-bold mb-3">Qual a melhor antecedência para comprar passagens internacionais?</h4>
+                  <h4 class="fw-bold mb-3 blog-card-title">Qual a melhor antecedência para comprar passagens internacionais?</h4>
                   <p class="text-secondary fs--1 mb-4">Entenda a janela ideal de compra e como os algoritmos das companhias aéreas precificam os voos para os EUA e Europa.</p>
-                  <a href="artigo-passagens.html" class="mt-auto fw-bold text-primary text-decoration-none">Ler artigo completo <i class="fas fa-arrow-right ms-1"></i></a>
+                  <a href="artigo-passagens.html" class="mt-auto fw-bold text-primary text-decoration-none">Ler artigo completo <i class="bi bi-arrow-right ms-1"></i></a>
                 </div>
               </div>
             </div>
 
             <!-- Artigo 2: Ingressos/Parques -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-3">
               <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
-                <div style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
-                  <i class="fas fa-ticket-alt text-secondary fa-3x"></i>
+                <div style="height: 160px; background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%); display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-ticket-perforated text-white fs-1"></i>
                 </div>
                 <div class="card-body p-4 d-flex flex-column">
                   <span class="badge bg-danger mb-2" style="width: fit-content;">Ingressos</span>
-                  <h4 class="fw-bold mb-3">Guia prático para os parques da Disney em Orlando</h4>
+                  <h4 class="fw-bold mb-3 blog-card-title">Guia prático para os parques da Disney em Orlando</h4>
                   <p class="text-secondary fs--1 mb-4">Evite filas! Saiba quais ingressos comprar antecipadamente e como planejar o seu roteiro para aproveitar ao máximo.</p>
-                  <a href="artigo-ingressos.html" class="mt-auto fw-bold text-danger text-decoration-none">Ler artigo completo <i class="fas fa-arrow-right ms-1"></i></a>
+                  <a href="artigo-ingressos.html" class="mt-auto fw-bold text-danger text-decoration-none">Ler artigo completo <i class="bi bi-arrow-right ms-1"></i></a>
                 </div>
               </div>
             </div>
 
             <!-- Artigo 3: Cruzeiros -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-3">
               <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
-                <div style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
-                  <i class="fas fa-ship text-secondary fa-3x"></i>
+                <div style="height: 160px; background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%); display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-water text-white fs-1"></i>
                 </div>
                 <div class="card-body p-4 d-flex flex-column">
                   <span class="badge bg-info mb-2" style="width: fit-content;">Cruzeiros</span>
-                  <h4 class="fw-bold mb-3">A magia dos Cruzeiros pelo Caribe: O que você precisa saber</h4>
+                  <h4 class="fw-bold mb-3 blog-card-title">A magia dos Cruzeiros pelo Caribe: O que você precisa saber</h4>
                   <p class="text-secondary fs--1 mb-4">Tudo incluso, paradas em praias paradisíacas e entretenimento 24h. Descubra se um cruzeiro é a viagem ideal para você.</p>
-                  <a href="artigo-cruzeiros.html" class="mt-auto fw-bold text-info text-decoration-none">Ler artigo completo <i class="fas fa-arrow-right ms-1"></i></a>
+                  <a href="artigo-cruzeiros.html" class="mt-auto fw-bold text-info text-decoration-none">Ler artigo completo <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artigo 4: Destinos Internacionais -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
+                <div style="height: 160px; background: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%); display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-globe-americas text-white fs-1"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <span class="badge bg-warning text-dark mb-2" style="width: fit-content;">Tendências</span>
+                  <h4 class="fw-bold mb-3 blog-card-title">Os 5 Destinos Internacionais Mais Desejados e Como Economizar</h4>
+                  <p class="text-secondary fs--1 mb-4">Descubra quais são os destinos em alta para viajantes brasileiros e aprenda dicas exclusivas para economizar.</p>
+                  <a href="artigo-destinos-internacionais.html" class="mt-auto fw-bold text-warning text-dark text-decoration-none">Ler artigo completo <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artigo 5: Seguro Viagem -->
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 shadow-sm border-0" style="border-radius: 15px; overflow: hidden;">
+                <div style="height: 160px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); display: flex; align-items: center; justify-content: center;">
+                  <i class="bi bi-shield-check text-white fs-1"></i>
+                </div>
+                <div class="card-body p-4 d-flex flex-column">
+                  <span class="badge bg-success mb-2" style="width: fit-content;">Segurança</span>
+                  <h4 class="fw-bold mb-3 blog-card-title">Seguro Viagem Internacional: Por que é indispensável e como escolher</h4>
+                  <p class="text-secondary fs--1 mb-4">Evite imprevistos médicos no exterior, entenda exigências de imigração como o Tratado de Schengen e viaje tranquilo.</p>
+                  <a href="artigo-seguro-viagem.html" class="mt-auto fw-bold text-success text-decoration-none">Ler artigo completo <i class="bi bi-arrow-right ms-1"></i></a>
                 </div>
               </div>
             </div>
@@ -143,7 +182,7 @@
       <!-- RODAPÉ -->
       <div class="py-5 text-center bg-white border-top">
         <p class="mb-0 text-secondary fs--1 fw-medium">© 2026 AeroClick Travel - Agência de Viagens e Assessoria Digital.</p>
-        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | CADASTUR: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
+        <p class="mb-0 text-secondary fs--2 fw-medium mt-2">CNPJ: 68.169.276/0001-31 | contato@aeroclicktravel.com.br</p>
       </div>
 
     </main>
